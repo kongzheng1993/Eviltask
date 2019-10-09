@@ -172,3 +172,43 @@ CREATE INDEX IDX_QRTZ_FT_T_G ON QRTZ_FIRED_TRIGGERS(SCHED_NAME,TRIGGER_NAME,TRIG
 CREATE INDEX IDX_QRTZ_FT_TG ON QRTZ_FIRED_TRIGGERS(SCHED_NAME,TRIGGER_GROUP);
 
 commit;
+
+
+# spring_scheduled_cron
+drop table if exists spring_scheduled_cron;
+create table spring_scheduled_cron (
+cron_id int primary key auto_increment comment '主键id',
+cron_class_name varchar(128) not null unique comment '定时任务完整类名',
+cron_expression varchar(20) not null comment 'cron表达式',
+task_desc varchar(50) not null default '' comment '任务描述',
+status tinyint not null default 1 comment '状态，1：正常；2：停用',
+unique index cron_class_unique_idx(`cron_class_name`)
+)
+engine = InnoDB
+default  charset = utf8mb4
+comment = '定时任务表';
+
+
+# spring_scheduled_log
+drop table if exists spring_scheduled_log;
+create table spring_scheduled_log (
+log_id int primary key auto_increment comment '主键id',
+cron_class_name varchar(128) not null unique comment '定时任务完整类名',
+task_desc varchar(50) not null default '' comment '任务描述',
+start_time datetime comment '开始时间',
+stop_time datetime comment '结束时间',
+unique index task_log_unique_idx(`cron_class_name`)
+)
+engine = InnoDB
+default  charset = utf8mb4
+comment = '任务执行日志表';
+
+
+
+
+
+
+
+
+
+
