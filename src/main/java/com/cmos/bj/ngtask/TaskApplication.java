@@ -1,15 +1,22 @@
-package com.cmos.bj.task;
+package com.cmos.bj.ngtask;
 
+import com.cmos.bj.ngtask.utils.SpringUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
+
+/**
+ * @author kongz
+ */
 @EnableScheduling
 @SpringBootApplication
 public class TaskApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TaskApplication.class, args);
+		ApplicationContext ac = SpringApplication.run(TaskApplication.class, args);
+        //SpringUtils.setApplicationContext(ac);
 	}
 
 }

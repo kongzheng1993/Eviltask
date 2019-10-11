@@ -174,8 +174,8 @@ CREATE INDEX IDX_QRTZ_FT_TG ON QRTZ_FIRED_TRIGGERS(SCHED_NAME,TRIGGER_GROUP);
 commit;
 
 
-# spring_scheduled_cron
-drop table if exists spring_scheduled_cron;
+# spring_schedule
+drop table if exists spring_schedule;
 create table spring_scheduled_cron (
 cron_id int primary key auto_increment comment '主键id',
 cron_class_name varchar(128) not null unique comment '定时任务完整类名',

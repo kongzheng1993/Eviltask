@@ -1,4 +1,4 @@
-package com.cmos.bj.task.config;
+package com.cmos.bj.ngtask.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
