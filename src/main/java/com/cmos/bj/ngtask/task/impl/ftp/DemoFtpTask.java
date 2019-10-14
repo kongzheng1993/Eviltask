@@ -1,8 +1,7 @@
-package com.cmos.bj.ngtask.task.impl;
+package com.cmos.bj.ngtask.task.impl.ftp;
 
 
 import com.cmos.bj.ngtask.task.ScheduleOfTask;
-import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 import org.slf4j.Logger;
