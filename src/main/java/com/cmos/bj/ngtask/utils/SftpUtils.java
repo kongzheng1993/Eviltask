@@ -103,35 +103,61 @@ public class SftpUtils {
      */
     public static boolean downloadFiles(ChannelSftp channelSftp, String remotePath, String localPath, int recursion) {
 
-
-        //判断是否为
-
+        Object filesInRemotePath = null;
         String workDir = remotePath.substring(0, remotePath.lastIndexOf("/"));
-
-
-        try {
-            channelSftp.cd(workDir);
-        } catch (SftpException e) {
-            logger.error("移到工作目录出现错误", e);
-            return false;
-        }
-        logger.info("Change path to {}", workDir);
-
-        File file = new File(localPath);
+        String fileReg = remotePath.substring(remotePath.lastIndexOf("/"));
 
         try {
-            OutputStream outputStream = new FileOutputStream(file);
-
-            channelSftp.get(remotePath, outputStream);
-            logger.info("文件下载成功-----  {}", file.getName());
-            return true;
-        } catch (FileNotFoundException e) {
-            logger.error("获取文件输出流出错", e);
-            return false;
+            filesInRemotePath = channelSftp.ls(remotePath);
         } catch (SftpException e) {
-            logger.error("get文件出错", e);
-            return false;
+            logger.error("remotePath下执行ls命令出错", e);
         }
+
+        //判断是否为文件
+        if (filesInRemotePath instanceof com.jcraft.jsch.ChannelSftp.LsEntry) {
+            ChannelSftp.LsEntry entry = (ChannelSftp.LsEntry) filesInRemotePath;
+            //如果不是目录
+            if (!entry.getAttrs().isDir()) {
+                try {
+                    channelSftp.cd(workDir);
+                } catch (SftpException e) {
+                    logger.error("移到工作目录出现错误", e);
+                    return false;
+                }
+                logger.info("Change path to {}", workDir);
+
+                //正则匹配文件，遍历下载
+                for (String fileName : entry) {
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+            File file = new File(localPath);
+
+            try {
+                OutputStream outputStream = new FileOutputStream(file);
+
+                channelSftp.get(remotePath, outputStream);
+                logger.info("文件下载成功-----  {}", file.getName());
+                return true;
+            } catch (FileNotFoundException e) {
+                logger.error("获取文件输出流出错", e);
+                return false;
+            } catch (SftpException e) {
+                logger.error("get文件出错", e);
+                return false;
+            }
+        }
+
+
     }
 
     /**
