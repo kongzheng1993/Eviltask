@@ -103,10 +103,11 @@ public class SftpUtils {
     /**
      * 下载文件
      */
-    public static boolean downloadFiles(ChannelSftp channelSftp, String remotePath, String localPath, String fileNameReg, int recursion) {
+    public static boolean downloadFiles(ChannelSftp channelSftp, String remotePath, String localPath, int recursion) {
 
         Object filesInRemotePath = null;
         String workDir = remotePath.substring(0, remotePath.lastIndexOf("/"));
+        String fileName = remotePath.substring(remotePath.lastIndexOf("/"));
 
         try {
             filesInRemotePath = channelSftp.ls(remotePath);
@@ -119,26 +120,32 @@ public class SftpUtils {
 
         if (entry != null && entry.size() > 0) {
             for (ChannelSftp.LsEntry file : entry) {
-                if (Pattern.matches(fileNameReg, file.getFilename())) {
-                    if (file.getAttrs().isDir()) {
-                        if (recursion == 1) {
-                            downloadFiles(channelSftp, workDir + file.getFilename(), localPath, fileNameReg, recursion);
-                        }
-                    } else {
-                        File localFile = new File(localPath + file.getFilename());
-                        try {
-                            OutputStream outputStream = new FileOutputStream(localFile);
-                            channelSftp.get(remotePath, outputStream);
-                            logger.info("文件下载成功-----  {}", localFile.getName());
-                        } catch (FileNotFoundException e) {
-                            logger.error("获取文件输出流出错", e);
-                            return false;
-                        } catch (SftpException e) {
-                            logger.error("get文件出错", e);
-                            return false;
-                        }
+                if (file.getAttrs().isDir()) {
+                    if (recursion == 1) {
+                        downloadFiles(channelSftp, workDir + "/" + file.getFilename() + "/" + fileName, (localPath.endsWith("/") ? localPath : localPath +"/") + file.getFilename(), recursion);
+                    }
+                } else {
+
+                    File localFileDir = new File(localPath);
+                    if (!localFileDir.exists()) {
+                        localFileDir.mkdirs();
+                    }
+
+                    File localFile = new File((localPath.endsWith("/") ? localPath : localPath + "/") + file.getFilename());
+
+                    try {
+                        OutputStream outputStream = new FileOutputStream(localFile);
+                        channelSftp.get(workDir + "/" + file.getFilename(), outputStream);
+                        logger.info("文件下载成功-----  {}", localFile.getName());
+                    } catch (FileNotFoundException e) {
+                        logger.error("获取文件输出流出错", e);
+                        return false;
+                    } catch (SftpException e) {
+                        logger.error("get文件出错", e);
+                        return false;
                     }
                 }
+
             }
             return true;
         } else {

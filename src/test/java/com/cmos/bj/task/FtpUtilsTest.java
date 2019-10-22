@@ -2,7 +2,10 @@ package com.cmos.bj.task;
 
 import com.cmos.bj.ngtask.utils.FtpUtils;
 import org.apache.commons.net.ftp.FTPClient;
+import org.hibernate.result.Output;
 import org.junit.Test;
+
+import java.io.*;
 
 /**
  * @Description:
@@ -14,9 +17,25 @@ public class FtpUtilsTest {
 
     @Test
     public void Test() {
-        FTPClient ftpClient = FtpUtils.connectFtpServer("10.4.144.217", 21, "cboss", "cboss-123", "gbk", FTPClient.ASCII_FILE_TYPE);
-        FtpUtils.downloadFiles(ftpClient, "/20190926-10-0-ZX.txt", "E:\\asiainfo\\接口平台\\requirement\\20191008携号转网新增task管理系统\\data", 0);
-        FtpUtils.closeFtpConnect(ftpClient);
+
+        File localFile = new File("Data/10.10.10.1/test.txt");
+
+        File file = new File("Data/10.10.10.1");
+
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+
+        try {
+            OutputStream out = new FileOutputStream(localFile);
+            String str = "fuck off";
+            out.write(str.getBytes());
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 }

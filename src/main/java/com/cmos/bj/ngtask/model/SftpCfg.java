@@ -47,9 +47,6 @@ public class SftpCfg {
     private int recursion;
 
     @Column
-    private String fileNameReg;
-
-    @Column
     private String ext;
 
 }

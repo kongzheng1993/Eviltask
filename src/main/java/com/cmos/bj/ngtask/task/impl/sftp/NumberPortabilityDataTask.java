@@ -7,6 +7,8 @@ import com.cmos.bj.ngtask.utils.SftpUtils;
 import com.jcraft.jsch.ChannelSftp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -25,6 +27,8 @@ public class NumberPortabilityDataTask extends AbsSftpTask {
     @Resource
     SftpCfgRepository sftpCfgRepository;
 
+    @Value("${task.localDir}")
+    String taskLocalDir;
 
     @Override
     public SftpCfg getSftpCfg() {
@@ -39,7 +43,7 @@ public class NumberPortabilityDataTask extends AbsSftpTask {
         //获取sftp连接
         ChannelSftp channelSftp = SftpUtils.connectSftpServer(sftpCfg.getSftpAddr(), sftpCfg.getSftpPort(), sftpCfg.getSftpUserName(), sftpCfg.getSftpUserPasswd(), sftpCfg.getSftpEncoding(), 1);
 
-        boolean result = SftpUtils.downloadFiles(channelSftp, sftpCfg.getSftpRemotePath(), sftpCfg.getSftpLocalPath(), sftpCfg.getFileNameReg(), sftpCfg.getRecursion());
+        boolean result = SftpUtils.downloadFiles(channelSftp, sftpCfg.getSftpRemotePath(), taskLocalDir + this.getClass().getName() + "/" + sftpCfg.getSftpAddr() + "/" + sftpCfg.getSftpLocalPath(), sftpCfg.getRecursion());
 
         if (result) {
             logger.info("任务执行完毕：{}", this.getClass());
