@@ -1,6 +1,7 @@
 package com.cmos.bj.ngtask.task.impl.sftp;
 
 import com.cmos.bj.ngtask.model.SftpCfg;
+import com.cmos.bj.ngtask.model.SpringSchedule;
 import com.cmos.bj.ngtask.repository.SftpCfgRepository;
 import com.cmos.bj.ngtask.task.AbsSftpTask;
 import com.cmos.bj.ngtask.utils.SftpUtils;
@@ -33,6 +34,11 @@ public class NumberPortabilityDataTask extends AbsSftpTask {
     @Override
     public SftpCfg getSftpCfg() {
         return sftpCfgRepository.getOne(1);
+    }
+
+    @Override
+    public SpringSchedule getTaskCfg() {
+        return null;
     }
 
     @Override

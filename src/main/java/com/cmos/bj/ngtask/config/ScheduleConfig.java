@@ -8,9 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
+import org.springframework.scheduling.config.ScheduledTask;
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.util.Assert;
+
+import java.util.Set;
 
 /**
  * @Description:
@@ -24,11 +27,16 @@ public class ScheduleConfig implements SchedulingConfigurer {
     @Autowired
     private ApplicationContext context;
 
+    private ScheduledTaskRegistrar scheduledTaskRegistrar;
+
+    private Set<ScheduledTask> scheduledTasks = null;
+
     @Autowired
     private SpringScheduleRepository springScheduleRepository;
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar scheduledTaskRegistrar) {
+        this.scheduledTaskRegistrar = scheduledTaskRegistrar;
         for (SpringSchedule springSchedule : springScheduleRepository.findAll()) {
             Class<?> clazz;
             Object task;
@@ -49,8 +57,21 @@ public class ScheduleConfig implements SchedulingConfigurer {
                 String cronExpression = (springScheduleRepository.findById(springSchedule.getCronId())).get().getCronExpression();
                 return new CronTrigger(cronExpression).nextExecutionTime(triggerContext);
             });
-
-
         }
     }
+
+
+    /**
+     * 获取所有任务
+     */
+    public Set<ScheduledTask> getScheduledFutures() {
+        if (scheduledTasks == null) {
+            scheduledTasks = scheduledTaskRegistrar.getScheduledTasks();
+        }
+        return scheduledTasks;
+    }
+
+    
+
+
 }
