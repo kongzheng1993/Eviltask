@@ -37,7 +37,7 @@ public class ScheduleConfig implements SchedulingConfigurer {
                 clazz = Class.forName(springSchedule.getCronClassName());
                 task = context.getBean(clazz);
             } catch (ClassNotFoundException e) {
-                throw new IllegalArgumentException("spring_scheduled_cron表数据" + springSchedule.getCronClassName() + "有误", e);
+                throw new IllegalArgumentException("spring_scheduled表数据" + springSchedule.getCronClassName() + "有误", e);
             } catch (BeansException e) {
                 throw new IllegalArgumentException(springSchedule.getCronClassName() + "未在spring ioc容器中找到", e);
             }

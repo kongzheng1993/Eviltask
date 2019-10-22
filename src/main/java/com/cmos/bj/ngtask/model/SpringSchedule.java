@@ -28,5 +28,7 @@ public class SpringSchedule {
     private String taskDesc;
     @Column(name = "status")
     private int status;
+    @Column(name = "afterOpr")
+    private String afterOpr;
 
 }
