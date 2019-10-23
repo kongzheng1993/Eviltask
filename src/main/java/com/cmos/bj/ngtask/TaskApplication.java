@@ -1,6 +1,5 @@
 package com.cmos.bj.ngtask;
 
-import com.cmos.bj.ngtask.utils.SpringUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

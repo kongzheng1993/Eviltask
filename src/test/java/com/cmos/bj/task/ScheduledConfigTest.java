@@ -16,6 +16,11 @@ public class ScheduledConfigTest {
         ScheduleConfig scheduleConfig = new ScheduleConfig();
     }
 
+    @Test
+    public void test() {
+        System.out.println("CREATEFILE:CSMS010{YYYYMMDDHH}.verf".substring("CREATEFILE:CSMS010{YYYYMMDDHH}.verf".indexOf("{")+1, "CREATEFILE:CSMS010{YYYYMMDDHH}.verf".indexOf("}")));
+
+    }
 
 
 }

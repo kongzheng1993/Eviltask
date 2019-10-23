@@ -4,10 +4,7 @@ import com.jcraft.jsch.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.Properties;
 import java.util.Vector;
 import java.util.regex.Pattern;
@@ -96,8 +93,16 @@ public class SftpUtils {
     /**
      * 上传文件
      */
-    public static boolean uploadFile() {
-        return false;
+    public static boolean uploadFile(ChannelSftp channelSftp, String remotePath, InputStream inputStream) {
+
+
+        try {
+            channelSftp.put(inputStream, remotePath);
+            return true;
+        } catch (SftpException e) {
+            logger.error("上传文件出错: " + remotePath, e);
+            return false;
+        }
     }
 
     /**
@@ -138,10 +143,10 @@ public class SftpUtils {
                         channelSftp.get(workDir + "/" + file.getFilename(), outputStream);
                         logger.info("文件下载成功-----  {}", localFile.getName());
                     } catch (FileNotFoundException e) {
-                        logger.error("获取文件输出流出错", e);
+                        logger.error("获取文件输出流出错 " + (localPath.endsWith("/") ? localPath : localPath + "/") + file.getFilename(), e);
                         return false;
                     } catch (SftpException e) {
-                        logger.error("get文件出错", e);
+                        logger.error("get文件出错 " + workDir + "/" + file.getFilename(), e);
                         return false;
                     }
                 }

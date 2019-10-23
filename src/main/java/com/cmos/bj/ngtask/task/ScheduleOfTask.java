@@ -1,10 +1,5 @@
 package com.cmos.bj.ngtask.task;
 
-import com.cmos.bj.ngtask.enums.ScheduleStatusEnum;
-import com.cmos.bj.ngtask.model.SpringSchedule;
-import com.cmos.bj.ngtask.repository.SpringScheduleRepository;
-import com.cmos.bj.ngtask.utils.SpringUtils;
-
 /**
  * @Description:
  * @Project: task
@@ -24,12 +19,9 @@ public interface ScheduleOfTask extends Runnable {
      */
     @Override
     default void run() {
-        SpringScheduleRepository repository = (SpringScheduleRepository) SpringUtils.getBean(SpringScheduleRepository.class);
-        SpringSchedule springSchedule = repository.findByCronClassName(this.getClass().getName());
-        if (ScheduleStatusEnum.DISABLE.getCode().equals(springSchedule.getStatus())) {
-            return;
-        }
+
         execute();
+
     }
 
 
