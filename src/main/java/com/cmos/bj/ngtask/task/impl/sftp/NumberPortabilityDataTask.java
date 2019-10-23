@@ -1,6 +1,7 @@
 package com.cmos.bj.ngtask.task.impl.sftp;
 
 import com.cmos.bj.ngtask.model.SftpCfg;
+import com.cmos.bj.ngtask.model.SpringSchedule;
 import com.cmos.bj.ngtask.repository.SftpCfgRepository;
 import com.cmos.bj.ngtask.task.AbsSftpTask;
 import com.cmos.bj.ngtask.utils.SftpUtils;
@@ -36,6 +37,11 @@ public class NumberPortabilityDataTask extends AbsSftpTask {
     }
 
     @Override
+    public SpringSchedule getTaskCfg() {
+        return null;
+    }
+
+    @Override
     public void doTask() {
 
         SftpCfg sftpCfg = getSftpCfg();
@@ -44,6 +50,8 @@ public class NumberPortabilityDataTask extends AbsSftpTask {
         ChannelSftp channelSftp = SftpUtils.connectSftpServer(sftpCfg.getSftpAddr(), sftpCfg.getSftpPort(), sftpCfg.getSftpUserName(), sftpCfg.getSftpUserPasswd(), sftpCfg.getSftpEncoding(), 1);
 
         boolean result = SftpUtils.downloadFiles(channelSftp, sftpCfg.getSftpRemotePath(), taskLocalDir + this.getClass().getName() + "/" + sftpCfg.getSftpAddr() + "/" + sftpCfg.getSftpLocalPath(), sftpCfg.getRecursion());
+
+        SftpUtils.close(channelSftp);
 
         if (result) {
             logger.info("任务执行完毕：{}", this.getClass());
