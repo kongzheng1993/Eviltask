@@ -1,7 +1,7 @@
 package com.cmos.bj.ngtask.task.impl.sftp;
 
 import com.cmos.bj.ngtask.model.SftpCfg;
-import com.cmos.bj.ngtask.model.SpringSchedule;
+import com.cmos.bj.ngtask.model.Task;
 import com.cmos.bj.ngtask.repository.SftpCfgRepository;
 import com.cmos.bj.ngtask.task.AbsSftpTask;
 import com.cmos.bj.ngtask.utils.SftpUtils;
@@ -9,7 +9,6 @@ import com.jcraft.jsch.ChannelSftp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -37,7 +36,7 @@ public class NumberPortabilityDataTask extends AbsSftpTask {
     }
 
     @Override
-    public SpringSchedule getTaskCfg() {
+    public Task getTaskCfg() {
         return null;
     }
 
@@ -50,8 +49,6 @@ public class NumberPortabilityDataTask extends AbsSftpTask {
         ChannelSftp channelSftp = SftpUtils.connectSftpServer(sftpCfg.getSftpAddr(), sftpCfg.getSftpPort(), sftpCfg.getSftpUserName(), sftpCfg.getSftpUserPasswd(), sftpCfg.getSftpEncoding(), 1);
 
         boolean result = SftpUtils.downloadFiles(channelSftp, sftpCfg.getSftpRemotePath(), taskLocalDir + this.getClass().getName() + "/" + sftpCfg.getSftpAddr() + "/" + sftpCfg.getSftpLocalPath(), sftpCfg.getRecursion());
-
-        SftpUtils.close(channelSftp);
 
         if (result) {
             logger.info("任务执行完毕：{}", this.getClass());

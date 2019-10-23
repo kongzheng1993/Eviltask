@@ -7,6 +7,7 @@ package com.cmos.bj.ngtask.enums;
  * @Date: 2019/10/10 13:06
  */
 public enum AfterOprEnum {
+    NULL("0", "不做操作"),
     DEL("1", "删除"),
     TRANS("2", "传输"),
     CREATEFILE("3", "生成文件");

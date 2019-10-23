@@ -1,8 +1,7 @@
 package com.cmos.bj.ngtask.repository;
 
-import com.cmos.bj.ngtask.model.SftpCfg;
+import com.cmos.bj.ngtask.model.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 /**
  * @Description:
@@ -11,9 +10,6 @@ import org.springframework.stereotype.Repository;
  * @Date: 2019/10/10 11:28
  */
 
-@Repository
-public interface SftpCfgRepository extends JpaRepository<SftpCfg, Integer> {
-
-
+public interface TaskRepository extends JpaRepository<Task, Integer> {
 
 }
