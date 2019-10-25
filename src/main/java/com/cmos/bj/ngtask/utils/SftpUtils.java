@@ -29,12 +29,12 @@ public class SftpUtils {
         Session session = null;
         Channel channel = null;
         try {
-            session = jSch.getSession(username, addr, port);
+            session = jSch.getSession(username, addr, port); //todo getsession为空
         } catch (JSchException e) {
             logger.error("获取sftp session失败", e);
         }
 
-        Assert.isNull(session, "sftp session 为空！！！");
+        Assert.isTrue(session == null, "sftp session 为空！！！");
 
         session.setPassword(password);
 
