@@ -8,6 +8,7 @@ import com.cmos.bj.ngtask.repository.SftpCfgRepository;
 import com.cmos.bj.ngtask.repository.TaskRepository;
 import com.cmos.bj.ngtask.task.AbsSftpTask;
 import com.cmos.bj.ngtask.utils.SftpUtils;
+import com.cmos.bj.ngtask.utils.TimeUtils;
 import com.jcraft.jsch.ChannelSftp;
 import lombok.Data;
 import org.slf4j.Logger;
@@ -61,6 +62,16 @@ public class SftpTaskImpl extends AbsSftpTask {
 
         if (TaskStatusEnum.DISABLE.getCode().equals(task.getTaskStatus())) {
             return;
+        }
+
+        //处理remotePath 如果文件名与时间有关，生成当前文件名
+        if (sftpCfg.getSftpRemotePath().indexOf("{") >= 0) {
+            try {
+                String timeReg = sftpCfg.getSftpRemotePath().substring(sftpCfg.getSftpRemotePath().indexOf("{") + 1, sftpCfg.getSftpRemotePath().indexOf("}"));
+                sftpCfg.setSftpRemotePath(sftpCfg.getSftpRemotePath().replace("{" + timeReg + "}", TimeUtils.getNowTimeStr(timeReg)));
+            }catch (Exception e) {
+                logger.error("获取remotePath中的时间配置发生错误", e);
+            }
         }
 
         //获取sftp连接

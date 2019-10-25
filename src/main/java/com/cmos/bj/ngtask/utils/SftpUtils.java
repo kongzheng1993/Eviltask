@@ -3,6 +3,7 @@ package com.cmos.bj.ngtask.utils;
 import com.jcraft.jsch.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.Assert;
 
 import java.io.*;
 import java.util.Properties;
@@ -32,10 +33,14 @@ public class SftpUtils {
         } catch (JSchException e) {
             logger.error("获取sftp session失败", e);
         }
+
+        Assert.isNull(session, "sftp session 为空！！！");
+
         session.setPassword(password);
 
         Properties config = new Properties();
-        config.setProperty("StrictHostKeyChecking", "no");
+        session.setConfig("PreferredAuthentications", "password,gssapi-with-mic,publickey,keyboard-interactive");
+        config.setProperty("StrictHostKeyChecking", "yes");
         session.setConfig(config);
 
         try {
@@ -46,11 +51,10 @@ public class SftpUtils {
 
         try {
             session.connect();
+            logger.info("sftp session 连接成功");
         } catch (JSchException e) {
             logger.error("sftp session 连接失败", e);
         }
-
-        logger.info("sftp session 连接成功");
 
         try {
             channel = session.openChannel("sftp");
