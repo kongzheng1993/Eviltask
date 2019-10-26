@@ -3,11 +3,9 @@ package com.cmos.bj.ngtask.utils;
 import com.jcraft.jsch.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.Assert;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.Properties;
 import java.util.Vector;
 import java.util.regex.Pattern;
@@ -31,14 +29,18 @@ public class SftpUtils {
         Session session = null;
         Channel channel = null;
         try {
-            session = jSch.getSession(username, addr, port);
+            session = jSch.getSession(username, addr, port); //todo getsession为空
         } catch (JSchException e) {
             logger.error("获取sftp session失败", e);
         }
+
+        Assert.isTrue(session == null, "sftp session 为空！！！");
+
         session.setPassword(password);
 
         Properties config = new Properties();
-        config.setProperty("StrictHostKeyChecking", "no");
+        session.setConfig("PreferredAuthentications", "password,gssapi-with-mic,publickey,keyboard-interactive");
+        config.setProperty("StrictHostKeyChecking", "yes");
         session.setConfig(config);
 
         try {
@@ -49,11 +51,10 @@ public class SftpUtils {
 
         try {
             session.connect();
+            logger.info("sftp session 连接成功");
         } catch (JSchException e) {
             logger.error("sftp session 连接失败", e);
         }
-
-        logger.info("sftp session 连接成功");
 
         try {
             channel = session.openChannel("sftp");
@@ -96,8 +97,16 @@ public class SftpUtils {
     /**
      * 上传文件
      */
-    public static boolean uploadFile() {
-        return false;
+    public static boolean uploadFile(ChannelSftp channelSftp, String remotePath, InputStream inputStream) {
+
+
+        try {
+            channelSftp.put(inputStream, remotePath);
+            return true;
+        } catch (SftpException e) {
+            logger.error("上传文件出错: " + remotePath, e);
+            return false;
+        }
     }
 
     /**
@@ -106,8 +115,8 @@ public class SftpUtils {
     public static boolean downloadFiles(ChannelSftp channelSftp, String remotePath, String localPath, int recursion) {
 
         Object filesInRemotePath = null;
-        String workDir = remotePath.substring(0, remotePath.lastIndexOf("/"));
-        String fileName = remotePath.substring(remotePath.lastIndexOf("/"));
+        String workDir = getWorkDir(remotePath);
+        String fileReg = getFileReg(remotePath);
 
         try {
             filesInRemotePath = channelSftp.ls(remotePath);
@@ -122,7 +131,7 @@ public class SftpUtils {
             for (ChannelSftp.LsEntry file : entry) {
                 if (file.getAttrs().isDir()) {
                     if (recursion == 1) {
-                        downloadFiles(channelSftp, workDir + "/" + file.getFilename() + "/" + fileName, (localPath.endsWith("/") ? localPath : localPath +"/") + file.getFilename(), recursion);
+                        downloadFiles(channelSftp, workDir + "/" + file.getFilename() + "/" + fileReg, (localPath.endsWith("/") ? localPath : localPath +"/") + file.getFilename(), recursion);
                     }
                 } else {
 
@@ -138,10 +147,10 @@ public class SftpUtils {
                         channelSftp.get(workDir + "/" + file.getFilename(), outputStream);
                         logger.info("文件下载成功-----  {}", localFile.getName());
                     } catch (FileNotFoundException e) {
-                        logger.error("获取文件输出流出错", e);
+                        logger.error("获取文件输出流出错 " + (localPath.endsWith("/") ? localPath : localPath + "/") + file.getFilename(), e);
                         return false;
                     } catch (SftpException e) {
-                        logger.error("get文件出错", e);
+                        logger.error("get文件出错 " + workDir + "/" + file.getFilename(), e);
                         return false;
                     }
                 }
@@ -160,8 +169,8 @@ public class SftpUtils {
     public static boolean deleteFiles(ChannelSftp channelSftp, String remotePath, int recursion) {
 
         Object filesInRemotePath = null;
-        String workDir = remotePath.substring(0, remotePath.lastIndexOf("/"));
-        String fileReg = remotePath.substring(remotePath.lastIndexOf("/"));
+        String workDir = getWorkDir(remotePath);
+        String fileReg = getFileReg(remotePath);
 
         try {
             filesInRemotePath = channelSftp.ls(remotePath);
@@ -193,9 +202,14 @@ public class SftpUtils {
             return true;
         }
         return false;
-
-
     }
 
+    private static String getWorkDir(String remotePath) {
+        return remotePath.substring(0, remotePath.lastIndexOf("/"));
+    }
+
+    private static String getFileReg(String remotePath) {
+        return remotePath.substring(remotePath.lastIndexOf("/"));
+    }
 
 }

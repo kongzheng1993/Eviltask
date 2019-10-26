@@ -1,11 +1,7 @@
 package com.cmos.bj.task;
 
-import com.cmos.bj.ngtask.utils.FtpUtils;
-import org.apache.commons.net.ftp.FTPClient;
-import org.hibernate.result.Output;
+import com.cmos.bj.ngtask.utils.TimeUtils;
 import org.junit.Test;
-
-import java.io.*;
 
 /**
  * @Description:
@@ -18,23 +14,11 @@ public class FtpUtilsTest {
     @Test
     public void Test() {
 
-        File localFile = new File("Data/10.10.10.1/test.txt");
 
-        File file = new File("Data/10.10.10.1");
-
-        if (!file.exists()) {
-            file.mkdirs();
+        for (String a : "CREATEFILE:CSMS010{yyyyMMddHHmmss}.verf".split("\\|")) {
+            System.out.println(a + "\n");
         }
 
-        try {
-            OutputStream out = new FileOutputStream(localFile);
-            String str = "fuck off";
-            out.write(str.getBytes());
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
     }
 
