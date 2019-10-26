@@ -115,8 +115,8 @@ public class SftpUtils {
     public static boolean downloadFiles(ChannelSftp channelSftp, String remotePath, String localPath, int recursion) {
 
         Object filesInRemotePath = null;
-        String workDir = remotePath.substring(0, remotePath.lastIndexOf("/"));
-        String fileName = remotePath.substring(remotePath.lastIndexOf("/"));
+        String workDir = getWorkDir(remotePath);
+        String fileReg = getFileReg(remotePath);
 
         try {
             filesInRemotePath = channelSftp.ls(remotePath);
@@ -131,7 +131,7 @@ public class SftpUtils {
             for (ChannelSftp.LsEntry file : entry) {
                 if (file.getAttrs().isDir()) {
                     if (recursion == 1) {
-                        downloadFiles(channelSftp, workDir + "/" + file.getFilename() + "/" + fileName, (localPath.endsWith("/") ? localPath : localPath +"/") + file.getFilename(), recursion);
+                        downloadFiles(channelSftp, workDir + "/" + file.getFilename() + "/" + fileReg, (localPath.endsWith("/") ? localPath : localPath +"/") + file.getFilename(), recursion);
                     }
                 } else {
 
@@ -169,8 +169,8 @@ public class SftpUtils {
     public static boolean deleteFiles(ChannelSftp channelSftp, String remotePath, int recursion) {
 
         Object filesInRemotePath = null;
-        String workDir = remotePath.substring(0, remotePath.lastIndexOf("/"));
-        String fileReg = remotePath.substring(remotePath.lastIndexOf("/"));
+        String workDir = getWorkDir(remotePath);
+        String fileReg = getFileReg(remotePath);
 
         try {
             filesInRemotePath = channelSftp.ls(remotePath);
@@ -202,9 +202,14 @@ public class SftpUtils {
             return true;
         }
         return false;
-
-
     }
 
+    private static String getWorkDir(String remotePath) {
+        return remotePath.substring(0, remotePath.lastIndexOf("/"));
+    }
+
+    private static String getFileReg(String remotePath) {
+        return remotePath.substring(remotePath.lastIndexOf("/"));
+    }
 
 }
