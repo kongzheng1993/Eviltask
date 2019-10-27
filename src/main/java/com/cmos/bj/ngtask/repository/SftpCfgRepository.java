@@ -1,6 +1,6 @@
 package com.cmos.bj.ngtask.repository;
 
-import com.cmos.bj.ngtask.model.SftpCfg;
+import com.cmos.bj.ngtask.entity.SftpCfg;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

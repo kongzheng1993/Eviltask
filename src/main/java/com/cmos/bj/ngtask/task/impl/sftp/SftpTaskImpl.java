@@ -2,8 +2,8 @@ package com.cmos.bj.ngtask.task.impl.sftp;
 
 import com.alibaba.druid.util.StringUtils;
 import com.cmos.bj.ngtask.enums.TaskStatusEnum;
-import com.cmos.bj.ngtask.model.SftpCfg;
-import com.cmos.bj.ngtask.model.Task;
+import com.cmos.bj.ngtask.entity.SftpCfg;
+import com.cmos.bj.ngtask.entity.Task;
 import com.cmos.bj.ngtask.repository.SftpCfgRepository;
 import com.cmos.bj.ngtask.repository.TaskRepository;
 import com.cmos.bj.ngtask.task.AbsSftpTask;

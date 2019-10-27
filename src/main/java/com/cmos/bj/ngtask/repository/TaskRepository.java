@@ -1,6 +1,6 @@
 package com.cmos.bj.ngtask.repository;
 
-import com.cmos.bj.ngtask.model.Task;
+import com.cmos.bj.ngtask.entity.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

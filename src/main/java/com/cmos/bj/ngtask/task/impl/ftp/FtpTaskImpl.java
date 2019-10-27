@@ -1,12 +1,10 @@
 package com.cmos.bj.ngtask.task.impl.ftp;
 
-import com.cmos.bj.ngtask.model.SftpCfg;
-import com.cmos.bj.ngtask.model.Task;
+import com.cmos.bj.ngtask.entity.SftpCfg;
+import com.cmos.bj.ngtask.entity.Task;
 import com.cmos.bj.ngtask.repository.SftpCfgRepository;
 import com.cmos.bj.ngtask.repository.TaskRepository;
 import com.cmos.bj.ngtask.task.AbsSftpTask;
-import com.cmos.bj.ngtask.utils.SftpUtils;
-import com.jcraft.jsch.ChannelSftp;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -18,12 +18,13 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.Properties;
 
-@Configuration
+//使用h2数据库，不实用druid，好像是druid不支持h2
+//@Configuration
 public class DruidConfig {
 
     private static final Logger logger = LoggerFactory.getLogger(DruidConfig.class);
 
-    @Bean
+    //@Bean
     public ServletRegistrationBean druidServlet() {
         logger.info("init Druid Servlet Configuration");
 
@@ -42,7 +43,7 @@ public class DruidConfig {
     }
 
 
-    @Bean
+    //@Bean
     public FilterRegistrationBean filterRegistrationBean() {
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new WebStatFilter());
         filterRegistrationBean.addUrlPatterns("/*");
@@ -72,7 +73,7 @@ class DruidProperties {
     private String filters;
     private String connectionProperties;
 
-    @Bean
+    //@Bean
     public DataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
         dataSource.setUrl(url);

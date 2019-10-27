@@ -1,7 +1,7 @@
 package com.cmos.bj.ngtask.task;
 
-import com.cmos.bj.ngtask.model.SftpCfg;
-import com.cmos.bj.ngtask.model.Task;
+import com.cmos.bj.ngtask.entity.SftpCfg;
+import com.cmos.bj.ngtask.entity.Task;
 import com.cmos.bj.ngtask.utils.SftpUtils;
 import com.cmos.bj.ngtask.utils.TimeUtils;
 import com.jcraft.jsch.ChannelSftp;
@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
-import javax.xml.crypto.Data;
 import java.io.*;
 
 /**
