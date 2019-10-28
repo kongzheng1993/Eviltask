@@ -1,0 +1,58 @@
+15:10:59.255 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 17296 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+15:10:59.263 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+15:10:59.402 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:10:59.416 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:11:02.894 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:11:03.075 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 165ms. Found 2 repository interfaces.
+15:11:03.333 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+15:11:03.876 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$852a5630] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:11:04.606 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+15:11:04.637 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+15:11:04.659 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+15:11:04.659 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+15:11:05.182 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+15:11:05.183 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 5765 ms
+15:11:05.194 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+15:11:05.292 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+15:11:05.299 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+15:11:06.010 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+15:11:06.118 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:11:06.231 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+15:11:06.235 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+15:11:06.521 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+15:11:06.840 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:11:10.592 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:11:16.089 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+15:11:16.556 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:11:21.451 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+15:19:42.692 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 11724 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+15:19:42.702 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+15:19:42.829 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:19:42.830 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:19:45.513 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:19:45.691 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 161ms. Found 2 repository interfaces.
+15:19:46.094 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+15:19:46.869 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c19931c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:19:47.533 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+15:19:47.569 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+15:19:47.590 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+15:19:47.591 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+15:19:47.962 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+15:19:47.962 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 5132 ms
+15:19:47.973 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+15:19:48.062 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+15:19:48.070 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+15:19:48.771 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+15:19:48.875 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:19:48.994 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+15:19:48.997 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+15:19:49.259 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+15:19:49.563 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:19:52.517 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:19:57.663 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+15:19:58.096 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:20:02.996 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729

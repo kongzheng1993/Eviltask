@@ -1,0 +1,821 @@
+16:52:50.910 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 6588 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+16:52:50.916 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+16:52:51.000 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:52:51.001 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:52:52.967 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+16:52:53.141 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 157ms. Found 2 repository interfaces.
+16:52:53.376 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+16:52:53.981 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$188f95e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:52:54.670 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+16:52:54.696 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+16:52:54.713 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+16:52:54.714 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+16:52:55.004 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+16:52:55.005 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3989 ms
+16:52:55.013 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+16:52:55.077 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+16:52:55.084 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+16:52:56.012 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+16:52:56.126 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:52:56.262 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+16:52:56.265 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+16:52:56.553 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+16:52:56.868 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:52:59.788 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:53:04.882 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+16:53:05.288 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:53:09.637 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+17:50:15.889 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+17:50:20.716 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+17:50:21.461 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+17:50:21.650 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+17:50:21.678 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 3454.783 seconds (JVM running for 3459.386)
+17:51:18.335 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+17:51:18.409 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+17:51:20.370 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:37)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+17:51:20.374 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:00:45.077 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 20100 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+18:00:45.083 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+18:00:45.363 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:00:45.364 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:00:47.617 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:00:47.791 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 160ms. Found 2 repository interfaces.
+18:00:48.145 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+18:00:48.759 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$27d24972] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:00:50.050 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+18:00:50.092 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+18:00:50.109 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+18:00:50.109 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+18:00:50.409 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+18:00:50.409 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 5045 ms
+18:00:50.417 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+18:00:50.477 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+18:00:50.483 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+18:00:51.161 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+18:00:51.255 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:00:51.366 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+18:00:51.370 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+18:00:51.603 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:00:51.887 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:00:54.729 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:01:00.242 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+18:01:00.677 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:01:05.139 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+18:01:31.904 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+18:01:36.321 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:01:37.286 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+18:01:37.398 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+18:01:37.412 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 54.013 seconds (JVM running for 58.158)
+18:02:24.103 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:02:24.147 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:02:37.835 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:37)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:02:37.838 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:03:33.898 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [96] - Unexpected error occurred in scheduled task.
+java.lang.IllegalArgumentException: 请检查配置，CREATEFILE操作需要格式为“CREATEFILE:文件名”
+	at org.springframework.util.Assert.doesNotContain(Assert.java:329)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:43)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:03:41.858 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:03:41.880 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:03:47.755 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:03:48.331 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:03:48.910 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:03:49.273 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:03:49.274 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:04:23.019 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:04:23.041 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:04:24.346 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:37)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:04:24.350 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:05:42.441 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [96] - Unexpected error occurred in scheduled task.
+java.lang.IllegalArgumentException: 请检查配置，CREATEFILE操作需要格式为“CREATEFILE:文件名”
+	at org.springframework.util.Assert.doesNotContain(Assert.java:329)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:43)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:07:47.662 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 14368 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+18:07:47.672 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+18:07:47.826 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:07:47.827 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:07:49.740 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:07:49.911 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 157ms. Found 2 repository interfaces.
+18:07:50.146 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+18:07:50.692 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4ae0a1fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:07:51.401 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+18:07:51.433 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+18:07:51.450 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+18:07:51.451 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+18:07:51.805 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+18:07:51.805 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3977 ms
+18:07:51.816 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+18:07:51.904 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+18:07:51.914 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+18:07:52.670 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+18:07:52.774 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:07:52.900 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+18:07:52.904 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+18:07:53.189 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:07:53.532 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:07:56.352 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:08:01.255 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+18:08:01.662 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:08:06.590 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+18:08:08.592 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+18:08:11.464 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:08:11.984 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+18:08:12.135 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+18:08:12.152 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 25.798 seconds (JVM running for 29.274)
+18:09:12.732 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:09:12.774 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:09:13.601 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:37)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:09:13.604 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:11:15.651 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:11:15.675 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:16:22.954 ERROR com.cmos.bj.ngtask.task.AbsSftpTask [63] - 创建本地verf文件失败
+java.io.IOException: 文件名、目录名或卷标语法不正确。
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1012)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:61)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:16:22.960 ERROR com.cmos.bj.ngtask.task.AbsSftpTask [72] - verfFile获取输入流失败
+java.io.FileNotFoundException: null\:CSMS010{20191024180947}.verf (文件名、目录名或卷标语法不正确。)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:70)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:16:22.964 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [78] - 从本地verf文件获取的inputstream为空，无法uploadFile
+18:16:33.946 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 4288 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+18:16:33.952 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+18:16:34.139 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:16:34.139 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:16:35.989 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:16:36.164 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 159ms. Found 2 repository interfaces.
+18:16:36.398 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+18:16:36.882 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$67b374e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:16:37.591 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+18:16:37.621 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+18:16:37.637 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+18:16:37.637 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+18:16:37.925 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+18:16:37.926 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3786 ms
+18:16:37.935 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+18:16:37.997 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+18:16:38.003 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+18:16:38.684 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+18:16:38.777 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:16:38.880 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+18:16:38.884 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+18:16:39.131 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:16:39.414 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:16:42.339 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:16:47.222 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+18:16:47.649 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:16:53.386 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+18:16:58.709 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+18:17:04.866 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:17:05.618 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+18:17:05.751 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+18:17:05.767 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 33.105 seconds (JVM running for 36.568)
+18:18:14.686 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:18:14.731 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:18:16.159 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:18:16.760 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:18:17.298 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:18:17.629 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:18:17.630 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:18:36.620 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:18:36.643 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:18:37.938 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:18:37.941 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:20:16.101 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 18440 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+18:20:16.108 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+18:20:16.269 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:20:16.270 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:20:18.228 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:20:18.441 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 195ms. Found 2 repository interfaces.
+18:20:18.720 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+18:20:19.215 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bd6b7a05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:20:19.943 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+18:20:19.968 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+18:20:19.986 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+18:20:19.986 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+18:20:20.287 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+18:20:20.288 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4018 ms
+18:20:20.296 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+18:20:20.362 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+18:20:20.368 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+18:20:21.064 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+18:20:21.168 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:20:21.283 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+18:20:21.286 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+18:20:21.540 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:20:21.837 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:20:25.491 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:20:31.071 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+18:20:31.475 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:20:36.593 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+18:20:39.010 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+18:21:02.289 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:21:03.330 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+18:21:03.446 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+18:21:03.460 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 49.068 seconds (JVM running for 54.27)
+18:22:13.418 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:22:13.466 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:22:24.353 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:22:24.355 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:22:41.445 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:22:41.468 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:25:36.424 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:25:36.446 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:26:16.610 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:26:17.108 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:26:17.472 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:26:17.828 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:26:17.829 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:26:30.288 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:26:30.319 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:26:37.016 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:26:37.019 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:26:49.997 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:26:50.019 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:27:24.825 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:27:24.847 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:27:29.043 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:27:30.343 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:27:30.779 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:27:31.197 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:27:31.199 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:28:20.433 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:28:20.456 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:28:21.867 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:28:22.474 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:28:23.043 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:28:23.756 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:28:23.757 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:28:30.856 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:28:30.877 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:28:34.199 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:28:34.202 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:28:48.182 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:28:48.203 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:30:26.571 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 11772 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+18:30:26.578 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+18:30:26.670 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:30:26.670 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:30:28.591 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:30:28.759 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 154ms. Found 2 repository interfaces.
+18:30:28.988 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+18:30:29.485 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a56d08d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:30:30.159 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+18:30:30.183 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+18:30:30.199 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+18:30:30.200 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+18:30:30.513 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+18:30:30.514 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3844 ms
+18:30:30.522 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+18:30:30.588 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+18:30:30.594 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+18:30:31.254 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+18:30:31.349 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:30:31.450 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+18:30:31.454 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+18:30:31.691 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:30:32.032 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:30:35.032 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:30:40.440 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+18:30:40.847 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:30:45.383 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+18:31:06.014 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 11912 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+18:31:06.022 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+18:31:06.301 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:31:06.302 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:31:08.241 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:31:08.413 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 157ms. Found 2 repository interfaces.
+18:31:08.652 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+18:31:09.118 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e4a9ade] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:31:09.748 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+18:31:09.772 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+18:31:09.788 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+18:31:09.788 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+18:31:10.073 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+18:31:10.074 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3771 ms
+18:31:10.082 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+18:31:10.145 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+18:31:10.150 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+18:31:10.796 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+18:31:10.896 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:31:11.002 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+18:31:11.006 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+18:31:11.248 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:31:11.538 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:31:14.437 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:31:19.332 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+18:31:19.736 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:31:24.191 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+18:31:28.469 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+18:31:32.101 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+18:31:32.738 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+18:31:32.842 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+18:31:32.857 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 28.12 seconds (JVM running for 33.707)
+18:32:12.219 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:32:12.263 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:32:25.552 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:32:25.958 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:32:27.254 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:32:38.877 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:32:38.880 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:33:02.792 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:33:02.815 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:33:04.096 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:33:04.100 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:33:13.448 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:33:13.470 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:37:48.620 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:37:48.644 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:37:51.710 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:37:52.143 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:37:52.488 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:37:52.857 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:37:52.858 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:38:03.630 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:38:03.664 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:38:05.222 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:38:05.225 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+18:38:10.343 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:38:10.363 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:40:07.231 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:40:07.253 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:40:14.035 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015222
+18:40:14.399 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20152222
+18:40:14.699 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2015111
+18:40:14.941 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_20151111
+18:40:14.942 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [72] - 任务执行完毕：100
+18:40:19.500 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+18:40:19.521 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+18:40:22.342 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:69)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+18:40:22.344 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [74] - 任务执行失败：154
+20:36:53.131 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 18476 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+20:36:53.139 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+20:36:53.402 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:36:53.403 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:36:55.365 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:36:55.565 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 185ms. Found 2 repository interfaces.
+20:36:55.845 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+20:36:56.348 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$37973f65] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:36:57.095 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+20:36:57.122 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+20:36:57.139 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+20:36:57.139 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+20:36:57.448 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+20:36:57.449 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4045 ms
+20:36:57.459 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+20:36:57.532 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+20:36:57.540 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+20:36:58.415 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+20:36:58.548 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:36:58.709 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+20:36:58.713 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+20:36:59.057 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+20:36:59.372 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:37:02.632 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:37:08.227 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+20:37:08.736 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:37:14.329 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+20:37:19.518 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+20:37:23.691 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+20:37:24.868 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+20:37:24.980 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+20:37:24.996 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 33.27 seconds (JVM running for 36.75)
+20:38:14.536 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+20:38:14.588 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+20:38:24.989 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:80)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+20:38:24.990 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [85] - 任务执行失败：154
+20:38:29.219 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+20:38:29.240 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+20:39:40.105 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 21364 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+20:39:40.114 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+20:39:40.418 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:39:40.419 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:39:42.359 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:39:42.532 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 159ms. Found 2 repository interfaces.
+20:39:42.775 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+20:39:43.256 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bdc2e2fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:39:43.922 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+20:39:43.949 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+20:39:43.966 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+20:39:43.966 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+20:39:44.270 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+20:39:44.271 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3852 ms
+20:39:44.279 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+20:39:44.350 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+20:39:44.356 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+20:39:45.024 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+20:39:45.124 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:39:45.233 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+20:39:45.236 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+20:39:45.512 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+20:39:45.828 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:39:48.933 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:39:54.169 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+20:39:54.605 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:39:59.341 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+20:40:01.134 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+20:40:04.403 INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor [295] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+20:40:04.975 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+20:40:05.111 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+20:40:05.131 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 26.555 seconds (JVM running for 30.119)
+20:41:13.890 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+20:41:13.944 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+20:41:33.591 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:80)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+20:41:33.603 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [85] - 任务执行失败：154
+20:41:39.848 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+20:41:39.870 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+20:42:17.985 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+20:42:18.007 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+20:42:20.836 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2019222
+20:42:21.908 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_201922
+20:42:22.626 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_2019111
+20:42:25.958 INFO  com.cmos.bj.ngtask.utils.SftpUtils [144] - 文件下载成功-----  100_OrdMember_201911
+20:42:25.959 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [83] - 任务执行完毕：100
+20:42:36.899 INFO  com.cmos.bj.ngtask.utils.SftpUtils [53] - sftp session 连接成功
+20:42:36.923 INFO  com.cmos.bj.ngtask.utils.SftpUtils [67] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+20:42:59.838 ERROR com.cmos.bj.ngtask.utils.SftpUtils [149] - get文件出错 /app/ftpuser/Test/1545734965480^�̻���ʵ��ͣ������.txt
+com.jcraft.jsch.SftpException: No such file
+	at com.jcraft.jsch.ChannelSftp.throwStatusError(ChannelSftp.java:2873)
+	at com.jcraft.jsch.ChannelSftp._get(ChannelSftp.java:1061)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1030)
+	at com.jcraft.jsch.ChannelSftp.get(ChannelSftp.java:1008)
+	at com.cmos.bj.ngtask.utils.SftpUtils.downloadFiles(SftpUtils.java:143)
+	at com.cmos.bj.ngtask.task.impl.sftp.SftpTaskImpl.doTask(SftpTaskImpl.java:80)
+	at com.cmos.bj.ngtask.task.AbsSftpTask.execute(AbsSftpTask.java:38)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+20:42:59.843 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [85] - 任务执行失败：154
+20:50:22.131 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 20236 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+20:50:22.141 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+20:50:22.299 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:50:22.300 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:50:24.291 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:50:24.494 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 188ms. Found 2 repository interfaces.
+20:50:24.765 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+20:50:25.244 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$adca0eb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:50:25.914 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+20:50:25.940 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+20:50:25.957 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+20:50:25.958 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+20:50:26.272 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+20:50:26.273 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3972 ms
+20:50:26.281 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+20:50:26.345 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+20:50:26.354 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+20:50:27.062 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+20:50:27.163 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:50:27.282 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+20:50:27.287 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+20:50:27.570 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+20:50:27.883 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:50:31.163 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:53:06.035 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 24428 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+20:53:06.043 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+20:53:06.157 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:53:06.157 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:53:08.293 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+20:53:08.470 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 162ms. Found 2 repository interfaces.
+20:53:08.732 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+20:53:09.256 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$833829c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:09.961 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+20:53:09.993 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+20:53:10.007 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+20:53:10.007 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+20:53:10.342 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+20:53:10.343 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4185 ms
+20:53:10.352 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+20:53:10.413 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+20:53:10.419 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+20:53:11.095 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+20:53:11.198 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:53:11.308 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+20:53:11.312 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+20:53:11.578 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+20:53:11.916 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:53:14.847 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:53:19.985 INFO  o.s.s.c.ThreadPoolTaskExecutor [171] - Initializing ExecutorService 'applicationTaskExecutor'
+20:53:20.407 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+20:53:25.026 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
