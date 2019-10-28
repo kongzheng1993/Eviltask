@@ -1,6 +1,5 @@
 package com.cmos.bj.ngtask.config;
 
-import com.alibaba.druid.util.StringUtils;
 import com.cmos.bj.ngtask.model.Task;
 import com.cmos.bj.ngtask.repository.TaskRepository;
 import com.cmos.bj.ngtask.task.AbsSftpTask;
@@ -11,7 +10,6 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.orm.jpa.JpaSystemException;
 import org.springframework.scheduling.SchedulingException;
 import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
@@ -110,6 +108,7 @@ public class ScheduleConfig implements SchedulingConfigurer {
         TaskScheduler taskScheduler = scheduledTaskRegistrar.getScheduler();
         ScheduledFuture<?> future = taskScheduler.schedule(triggerTask.getRunnable(), triggerTask.getTrigger());
         //ScheduledTask scheduledTask = new ScheduledTask(triggerTask);
+
 
     }
     
