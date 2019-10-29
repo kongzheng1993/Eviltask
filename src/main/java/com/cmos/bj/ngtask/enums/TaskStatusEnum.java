@@ -10,18 +10,18 @@ import lombok.Data;
  */
 public enum TaskStatusEnum {
 
-    ABLE("1","在用"),
-    DISABLE("2", "禁用");
+    ABLE(1,"在用"),
+    DISABLE(2, "禁用");
 
-    private String code;
+    private int code;
     private String value;
 
-    TaskStatusEnum(String code, String value) {
+    TaskStatusEnum(int code, String value) {
         this.code = code;
         this.value = value;
     }
 
-    public String getCode() {
+    public int getCode() {
         return code;
     }
 

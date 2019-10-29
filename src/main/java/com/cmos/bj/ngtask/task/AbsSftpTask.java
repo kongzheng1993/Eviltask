@@ -1,7 +1,8 @@
 package com.cmos.bj.ngtask.task;
 
-import com.cmos.bj.ngtask.model.SftpCfg;
-import com.cmos.bj.ngtask.model.Task;
+import com.cmos.bj.ngtask.entity.SftpCfg;
+import com.cmos.bj.ngtask.entity.Task;
+import com.cmos.bj.ngtask.enums.TaskStatusEnum;
 import com.cmos.bj.ngtask.utils.SftpUtils;
 import com.cmos.bj.ngtask.utils.TimeUtils;
 import com.jcraft.jsch.ChannelSftp;
@@ -10,7 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
-import javax.xml.crypto.Data;
 import java.io.*;
 
 /**
@@ -34,8 +34,18 @@ public abstract class AbsSftpTask implements ScheduleOfTask {
         //获取sftp配置
         SftpCfg sftpCfg = getSftpCfg();
 
+        if (TaskStatusEnum.DISABLE.getCode() == (task.getTaskStatus())) {
+            logger.info(task.getTaskName() + "任务已停用，如要启用请修改配置。");
+            return;
+        }
+
         //任务执行流程
-        doTask();
+        boolean result = doTask();
+
+        //任务执行失败直接结束流程
+        if (!result) {
+            return;
+        }
 
         //判断后置操作
         for (String afterOpr : task.getAfterTask().split(FTP_AFTER_OPR_SEPARATOR)) {
@@ -116,6 +126,6 @@ public abstract class AbsSftpTask implements ScheduleOfTask {
      */
     public abstract Task getTaskCfg();
 
-    public abstract void doTask();
+    public abstract boolean doTask();
 
 }

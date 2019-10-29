@@ -15,9 +15,7 @@ public class FtpUtilsTest {
     public void Test() {
 
 
-        for (String a : "CREATEFILE:CSMS010{yyyyMMddHHmmss}.verf".split("\\|")) {
-            System.out.println(a + "\n");
-        }
+        System.out.println(TimeUtils.getNowTimeStr("yyyyMMddHH-1"));
 
 
     }

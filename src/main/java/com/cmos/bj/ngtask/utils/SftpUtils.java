@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
 
 import java.io.*;
+import java.lang.reflect.Field;
 import java.util.Properties;
 import java.util.Vector;
 import java.util.regex.Pattern;
@@ -29,19 +30,17 @@ public class SftpUtils {
         Session session = null;
         Channel channel = null;
         try {
-            session = jSch.getSession(username, addr, port); //todo getsession为空
+            session = jSch.getSession(username, addr, port);
         } catch (JSchException e) {
             logger.error("获取sftp session失败", e);
         }
 
-        Assert.isTrue(session == null, "sftp session 为空！！！");
+        Assert.isTrue(session != null, "sftp session 为空！！！");
 
         session.setPassword(password);
 
-        Properties config = new Properties();
         session.setConfig("PreferredAuthentications", "password,gssapi-with-mic,publickey,keyboard-interactive");
-        config.setProperty("StrictHostKeyChecking", "yes");
-        session.setConfig(config);
+        session.setConfig("StrictHostKeyChecking", "no");
 
         try {
             session.setTimeout(30000);
@@ -81,12 +80,14 @@ public class SftpUtils {
         if (channelSftp != null) {
             if (channelSftp.isConnected()) {
                 channelSftp.disconnect();
+                logger.info("channelSftp断开连接成功");
             } else if (channelSftp.isClosed()) {
                 logger.info("sftp is closed already");
             }
             try {
                 if (null != channelSftp.getSession()) {
                     channelSftp.getSession().disconnect();
+                    logger.info("sftp session断开成功");
                 }
             } catch (JSchException e) {
                 logger.error("根据channel获取session并关闭session时出错", e);
@@ -112,16 +113,25 @@ public class SftpUtils {
     /**
      * 下载文件
      */
-    public static boolean downloadFiles(ChannelSftp channelSftp, String remotePath, String localPath, int recursion) {
+    public static boolean downloadFiles(ChannelSftp channelSftp, String remotePath, String localPath,String encoding, int recursion) {
 
         Object filesInRemotePath = null;
         String workDir = getWorkDir(remotePath);
         String fileReg = getFileReg(remotePath);
 
         try {
+            Class channelSftpClass = ChannelSftp.class;
+            Field serverVersion = channelSftpClass.getDeclaredField("server_version");
+            serverVersion.setAccessible(true);
+            serverVersion.set(channelSftp, 2);
+            channelSftp.setFilenameEncoding(encoding);
             filesInRemotePath = channelSftp.ls(remotePath);
         } catch (SftpException e) {
             logger.error("remotePath下执行ls命令出错", e);
+        } catch (NoSuchFieldException e) {
+            logger.error("修改sftp服务器version，获取channelSftp的server_version字段时出错", e);
+        } catch (IllegalAccessException e) {
+            logger.error("向channelSftp对象中setServerVersion为2时出错", e);
         }
 
         //遍历目录下所有文件和目录
@@ -131,7 +141,7 @@ public class SftpUtils {
             for (ChannelSftp.LsEntry file : entry) {
                 if (file.getAttrs().isDir()) {
                     if (recursion == 1) {
-                        downloadFiles(channelSftp, workDir + "/" + file.getFilename() + "/" + fileReg, (localPath.endsWith("/") ? localPath : localPath +"/") + file.getFilename(), recursion);
+                        downloadFiles(channelSftp, workDir + "/" + file.getFilename() + "/" + fileReg, (localPath.endsWith("/") ? localPath : localPath +"/") + file.getFilename(),encoding, recursion);
                     }
                 } else {
 
@@ -145,7 +155,7 @@ public class SftpUtils {
                     try {
                         OutputStream outputStream = new FileOutputStream(localFile);
                         channelSftp.get(workDir + "/" + file.getFilename(), outputStream);
-                        logger.info("文件下载成功-----  {}", localFile.getName());
+                        logger.info("文件下载成功-----  {}", localFile.getAbsolutePath());
                     } catch (FileNotFoundException e) {
                         logger.error("获取文件输出流出错 " + (localPath.endsWith("/") ? localPath : localPath + "/") + file.getFilename(), e);
                         return false;
@@ -158,6 +168,7 @@ public class SftpUtils {
             }
             return true;
         } else {
+            logger.info("指定目录下没有指定文件..");
             return false;
         }
 

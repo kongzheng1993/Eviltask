@@ -1,4 +1,0 @@
-20:55:27.721 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication v0.0.1-SNAPSHOT on Evil with PID 384 (/mnt/f/workspace/idea/ngtask/target/task-0.0.1-SNAPSHOT.jar started by kongzheng1993 in /mnt/f/workspace/idea/ngtask/target)
-20:55:27.738 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
-20:55:29.671 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
-20:55:29.814 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 118ms. Found 2 repository interfaces.
