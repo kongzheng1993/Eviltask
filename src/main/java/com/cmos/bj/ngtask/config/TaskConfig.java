@@ -19,6 +19,10 @@ import org.springframework.util.Assert;
 
 import javax.annotation.PostConstruct;
 
+/**
+ * task配置类
+ */
+
 @Component
 public class TaskConfig {
 

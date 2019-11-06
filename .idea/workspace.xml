@@ -2,72 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f90abe72-16f5-4cbc-9d8d-ab4f6429c97f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/FileCfg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/repository/FileCfgRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/TaskUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSMS01020191024182230.verf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSMS01020191024182647.verf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSMS01020191024182844.verf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSMS01020191024183307.verf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSMS01020191024183807.verf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSMS01020191024203827.verf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSMS01020191024204137.verf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/100/10.7.5.69/100_OrdMember_2015/100_OrdMember_2015/100_OrdMember_2015222" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/100/10.7.5.69/100_OrdMember_2015/100_OrdMember_2015/100_OrdMember_20152222" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/100/10.7.5.69/100_OrdMember_2015/100_OrdMember_2015111" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/100/10.7.5.69/100_OrdMember_2015/100_OrdMember_20151111" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/154/10.7.5.69/1545734965480^�̻���ʵ��ͣ������.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/logs/ngtask.2019-10-23.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/logs/ngtask.2019-10-24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/logs/ngtask.2019-10-25.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/logs/ngtask.2019-10-28.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/ScheduleConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/enums/TaskStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/enums/TaskStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/model/FtpCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/FtpCfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/model/SftpCfg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/SftpCfg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/repository/SftpCfgRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/repository/SftpCfgRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/repository/TaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/ftp/FtpTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/ftp/FtpDownloadTaskImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/NumberPortabilityDataTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/SftpTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/SftpDownloadTaskImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/TimeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/TimeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-test.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cmos/bj/task/FtpUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cmos/bj/task/FtpUtilsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cmos/bj/task/ScheduledConfigTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cmos/bj/task/ScheduledConfigTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LOG_FILE_IS_UNDEFINED.2019-10-24.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-prod.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/config/ScheduleConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/TaskApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/TaskApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/config/DruidProperties.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/config/DruidProperties.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/controller/TaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/controller/TaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/enums/AfterOprEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/enums/AfterOprEnum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/enums/TaskStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/enums/TaskStatusEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/model/FtpCfg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/model/SftpCfg.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/model/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/repository/SftpCfgRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/repository/SftpCfgRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/repository/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/repository/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/task/AbsSftpTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/task/AbsSftpTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/task/impl/ftp/FtpTaskImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/task/impl/sftp/NumberPortabilityDataTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/task/impl/sftp/SftpTaskImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/listeners/ApplicationContextListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/listeners/ApplicationContextListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/BeanUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/BeanUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/FtpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/FtpUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/SftpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/SftpUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/SpringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/SpringUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/TimeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cmos/bj/ngtask/utils/TimeUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/home/logs/ngtask.2019-10-24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/task-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/task-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cmos/bj/task/FtpUtilsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cmos/bj/task/FtpUtilsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cmos/bj/task/ScheduledConfigTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cmos/bj/task/ScheduledConfigTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,6 +32,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/task$FtpUtilsTest_Test.ic" NAME="FtpUtilsTest.Test Coverage Results" MODIFIED="1570788548760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -110,52 +69,59 @@
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.62" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="93" />
+          <entry key="class" value="97" />
           <entry key="factories" value="2" />
-          <entry key="java" value="160" />
+          <entry key="html" value="4" />
+          <entry key="java" value="172" />
           <entry key="pom" value="2" />
-          <entry key="properties" value="26" />
+          <entry key="properties" value="27" />
           <entry key="sql" value="2" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="11" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="93" />
-          <entry key="JAVA" value="160" />
+          <entry key="CLASS" value="97" />
+          <entry key="HTML" value="4" />
+          <entry key="JAVA" value="172" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="26" />
+          <entry key="Properties" value="27" />
           <entry key="SQL" value="2" />
-          <entry key="XML" value="13" />
+          <entry key="XML" value="15" />
           <entry key="spring.factories" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="2" />
           <entry key="dummy" value="28" />
-          <entry key="java" value="18987" />
-          <entry key="properties" value="152" />
-          <entry key="txt" value="187" />
-          <entry key="xml" value="324" />
+          <entry key="ft" value="23" />
+          <entry key="html" value="171" />
+          <entry key="java" value="19300" />
+          <entry key="properties" value="389" />
+          <entry key="txt" value="205" />
+          <entry key="xml" value="383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="18987" />
-          <entry key="PLAIN_TEXT" value="215" />
-          <entry key="Properties" value="152" />
-          <entry key="XML" value="324" />
+          <entry key="CLASS" value="2" />
+          <entry key="HTML" value="171" />
+          <entry key="JAVA" value="19300" />
+          <entry key="PLAIN_TEXT" value="233" />
+          <entry key="Properties" value="389" />
+          <entry key="VTL" value="23" />
+          <entry key="XML" value="383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -168,68 +134,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TaskController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/SftpDownloadTaskImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/ScheduleOfTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/Task.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/enums/TaskStatusEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="255">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -238,28 +146,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/TaskUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="-901">
+              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#2776#2777#0" expanded="true" />
+                <element signature="e#2808#2809#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/service/TaskService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scheduling/concurrent/ReschedulingRunnable.class">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/task.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
+            <state relative-caret-position="221">
+              <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -272,15 +187,12 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>triggerTasks.add</find>
-      <find>Future</find>
-      <find>after</find>
-      <find>set</find>
       <find>cronTask</find>
       <find>cronTasks</find>
       <find>addtrigger</find>
@@ -307,6 +219,10 @@
       <find>sftpCfg.getSftpRemotePath()</find>
       <find>sftpCfg</find>
       <find>SftpDwonloadTaskImpl</find>
+      <find>convert</find>
+      <find>param</find>
+      <find>devtool</find>
+      <find>contentT</find>
     </findStrings>
     <replaceStrings>
       <replace>logger.info</replace>
@@ -326,9 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/tables_mysql_innodb.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/DemoTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/listeners/ApplicationContextListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/SpringUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/DemoSftpTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/DemoFtpTask.java" />
@@ -350,16 +263,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/enums/AfterOprEnum.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/repository/SftpCfgRepository.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/TaskApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cmos/bj/task/TaskApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/ScheduleConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/NumberPortabilityDataTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/TaskUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TaskController.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/cmos/bj/task/ScheduledConfigTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/service/TaskService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application-prod.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application-test.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/cmos/bj/task/FtpUtilsTest.java" />
@@ -372,11 +281,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/FileCfg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/SftpDownloadTaskImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/enums/TaskStatusEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TestController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/test.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TaskController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/task.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/service/TaskService.java" />
       </list>
     </option>
   </component>
@@ -435,6 +351,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -475,7 +392,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task" type="b2602c69:ProjectViewProjectNode" />
@@ -484,44 +401,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="DruidConfig.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="listeners" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task" type="b2602c69:ProjectViewProjectNode" />
@@ -558,31 +438,7 @@
               <item name="ngtask" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="ftp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="sftp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ngtask" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task" type="b2602c69:ProjectViewProjectNode" />
@@ -590,6 +446,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task" type="b2602c69:ProjectViewProjectNode" />
@@ -612,27 +469,23 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="task" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="task" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="SftpDownLoadTaskImpl&#9;PSI&#9;JAVA://com.cmos.bj.ngtask.task.impl.sftp.SftpDownloadTaskImpl&#10;taskservi&#9;PSI&#9;JAVA://com.cmos.bj.ngtask.service.TaskService&#10;sftpUtils&#9;FILE&#9;file://F:/workspace/idea/ngtask/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java&#10;DemoFtpTask&#9;FILE&#9;file://F:/workspace/idea/ngtask/src/main/java/com/cmos/bj/ngtask/task/impl/ftp/DemoFtpTask.java&#10;pom&#9;FILE&#9;file://F:/workspace/idea/ngtask/pom.xml&#10;spring.factories&#9;FILE&#9;jar://C:/Users/kongz/.m2/repository/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/META-INF/spring.factories&#10;FTPClient&#9;FILE&#9;jar://C:/Users/kongz/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar!/org/apache/commons/net/ftp/FTPClient.class&#10;excep&#9;PSI&#9;JAVA://java.lang.Exception&#10;LoggerFactory&#9;PSI&#9;JAVA://org.slf4j.LoggerFactory" />
+    <property name="SearchEverywhereHistoryKey" value="TemplateManager&#9;PSI&#9;JAVA://org.thymeleaf.engine.TemplateManager&#10;delete&#9;FILE&#9;file://F:/workspace/idea/ngtask/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java&#10;AbsSftpTask&#9;FILE&#9;file://F:/workspace/idea/ngtask/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java&#10;sql&#9;FILE&#9;jar://C:/Users/kongz/.m2/repository/org/hibernate/hibernate-core/5.3.11.Final/hibernate-core-5.3.11.Final.jar!/org/hibernate/exception/internal/SQLStateConversionDelegate.class&#10;sqlstateconversionD&#9;PSI&#9;JAVA://org.hibernate.exception.internal.SQLStateConversionDelegate&#10;SftpDownLoadTaskImpl&#9;PSI&#9;JAVA://com.cmos.bj.ngtask.task.impl.sftp.SftpDownloadTaskImpl&#10;taskservi&#9;PSI&#9;JAVA://com.cmos.bj.ngtask.service.TaskService&#10;sftpUtils&#9;FILE&#9;file://F:/workspace/idea/ngtask/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java&#10;DemoFtpTask&#9;FILE&#9;file://F:/workspace/idea/ngtask/src/main/java/com/cmos/bj/ngtask/task/impl/ftp/DemoFtpTask.java&#10;pom&#9;FILE&#9;file://F:/workspace/idea/ngtask/pom.xml&#10;spring.factories&#9;FILE&#9;jar://C:/Users/kongz/.m2/repository/org/springframework/spring-beans/5.1.9.RELEASE/spring-beans-5.1.9.RELEASE.jar!/META-INF/spring.factories&#10;FTPClient&#9;FILE&#9;jar://C:/Users/kongz/.m2/repository/commons-net/commons-net/3.6/commons-net-3.6.jar!/org/apache/commons/net/ftp/FTPClient.class&#10;excep&#9;PSI&#9;JAVA://java.lang.Exception&#10;LoggerFactory&#9;PSI&#9;JAVA://org.slf4j.LoggerFactory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572353206818" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1573021396093" />
     <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -640,7 +493,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15530303" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -736,6 +589,8 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cmos.bj.ngtask.TaskApplication" />
       <option name="VM_PARAMETERS" value="-Dspring.profiles.active=dev" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -779,7 +634,8 @@
       <workItem from="1571705174828" duration="24605000" />
       <workItem from="1571791730869" duration="4037000" />
       <workItem from="1572227019499" duration="20329000" />
-      <workItem from="1572335217803" duration="13311000" />
+      <workItem from="1572335217803" duration="16148000" />
+      <workItem from="1572828863310" duration="24433000" />
     </task>
     <task id="LOCAL-00001" summary="add FtpUtils、修复无法获取applicationContext">
       <created>1570790220680</created>
@@ -830,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572005071381</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add 增加删除本地文件任务">
+      <created>1572353567928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572353567928</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -866,13 +729,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218350000" />
+    <option name="totallyTimeSpent" value="245620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49526066" visible="true" weight="0.2792041" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49526066" visible="true" weight="0.22400513" />
       <window_info id="Structure" order="1" sideWeight="0.50473934" side_tool="true" weight="0.33055198" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -880,10 +743,11 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.59289616" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22814208" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.41393444" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22814208" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3852459" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -893,7 +757,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329235" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.329235" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.28142077" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -945,7 +809,8 @@
     <MESSAGE value="add 改造前提交" />
     <MESSAGE value="add develop分支重构，使用多例sftpTaskImpl" />
     <MESSAGE value="add develop add fix some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add develop add fix some bugs" />
+    <MESSAGE value="add 增加删除本地文件任务" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 增加删除本地文件任务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -970,15 +835,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java</url>
-          <line>50</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/SftpDownloadTaskImpl.java</url>
@@ -994,20 +853,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java</url>
-          <line>69</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="file.getName()" language="JAVA" />
-        <watch expression="fileReg" language="JAVA" />
-        <watch expression="file.getName().matches(&quot;100_OrdMember_2019102917*&quot;)" language="JAVA" />
-        <watch expression="TaskStatusEnum.DISABLE.getCode().equals(task.getTaskStatus())" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="breakpointCondition">
@@ -1123,45 +974,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="1716" column="15" selection-start-line="1716" selection-start-column="15" selection-end-line="1716" selection-end-column="15" />
-          <folding>
-            <element signature="e#66457#66458#0" expanded="true" />
-            <element signature="e#66495#66496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/jcraft/jsch/0.1.55/jsch-0.1.55.jar!/com/jcraft/jsch/ChannelSftp.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="256" column="42" selection-start-line="256" selection-start-column="39" selection-end-line="256" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/5.1.9.RELEASE/spring-core-5.1.9.RELEASE.jar!/org/springframework/util/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/DruidConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="82" column="41" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/FtpUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1190,9 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1253,18 +1062,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/ScheduleConfig.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TaskController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/cmos/bj/task/ScheduledConfigTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1272,35 +1069,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/service/TaskService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/NumberPortabilityDataTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/TaskUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-            <element signature="e#2776#2777#0" expanded="true" />
-            <element signature="e#2808#2809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application-prod.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1329,21 +1098,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="135" column="29" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/time/LocalDateTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="1494" column="25" selection-start-line="1494" selection-start-column="25" selection-end-line="1494" selection-end-column="25" />
-          <folding>
-            <element signature="e#66796#66797#0" expanded="true" />
-            <element signature="e#66860#66861#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1379,9 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1416,16 +1171,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/FileCfg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1441,16 +1186,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
+        <state relative-caret-position="2737">
+          <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1458,69 +1207,154 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scheduling/concurrent/ReschedulingRunnable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="850">
           <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/SftpUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/entity/FileCfg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="170" column="38" selection-start-line="170" selection-start-column="38" selection-end-line="170" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="374">
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/hibernate/hibernate-core/5.3.11.Final/hibernate-core-5.3.11.Final.jar!/org/hibernate/exception/internal/SQLStateConversionDelegate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="359">
+          <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/SftpDownloadTaskImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#1040#1058#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/ScheduleOfTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/sftp/SftpDownloadTaskImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/impl/file/DeleteLocalFileTaskImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="219">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/thymeleaf/thymeleaf/3.0.11.RELEASE/thymeleaf-3.0.11.RELEASE.jar!/org/thymeleaf/engine/TemplateManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="434" selection-end-line="434" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/task/AbsSftpTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.1.9.RELEASE/spring-context-5.1.9.RELEASE.jar!/org/springframework/scheduling/support/DelegatingErrorHandlingRunnable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/config/TaskConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/utils/TaskUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#2776#2777#0" expanded="true" />
+            <element signature="e#2808#2809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/controller/TaskController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/cmos/bj/ngtask/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>

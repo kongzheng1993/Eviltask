@@ -2,6 +2,7 @@ package com.cmos.bj.ngtask.task.impl.file;
 
 import com.cmos.bj.ngtask.entity.FileCfg;
 import com.cmos.bj.ngtask.entity.Task;
+import com.cmos.bj.ngtask.enums.TaskStatusEnum;
 import com.cmos.bj.ngtask.repository.FileCfgRepository;
 import com.cmos.bj.ngtask.repository.TaskRepository;
 import com.cmos.bj.ngtask.task.ScheduleOfTask;
@@ -47,6 +48,11 @@ public class DeleteLocalFileTaskImpl implements ScheduleOfTask {
         FileCfg fileCfg = fileCfgRepository.getOne(fileId);
 
         Task task = taskRepository.getOne(taskId);
+
+        if (TaskStatusEnum.DISABLE.getCode() == (task.getTaskStatus())) {
+            logger.info(task.getTaskName() + "任务已停用，如要启用请修改配置。");
+            return;
+        }
 
         if (fileCfg.getFileLocalPath().indexOf("{") >= 0) {
             try {
