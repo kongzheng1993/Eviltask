@@ -1,0 +1,70 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>任务管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-bordered table-condensed table-striped">
+                <thead>
+                <tr>
+                    <th>任务序号</th>
+                    <th>任务名称</th>
+                    <th>任务实现类</th>
+                    <th>执行表达式</th>
+                    <th>任务状态</th>
+                    <th>完成后操作</th>
+                    <th>FTP配置序号</th>
+                    <th>SFTP配置序号</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="task : ${tasks}">
+                    <td th:text="${task.taskId}"></td>
+                    <td th:text="${task.taskName}"></td>
+                    <td th:text="${task.taskClassName}"></td>
+                    <td th:text="${task.taskExpression}"></td>
+                    <td th:text="${task.taskStatus}"></td>
+                    <td th:text="${task.afterTask}"></td>
+                    <td th:text="${task.ftpId}"></td>
+                    <td th:text="${task.sftpId}"></td>
+                    <td>
+                        <a href="#">下架</a>
+                        <a href="">上架</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <#--分页-->
+        <div class="col-md-12 column">
+            <ul class="pagination ">
+                <li class="disabled "><a class="page-link" href="#">上一页</a></li>
+                <li>
+                    <a class="page-link" href="/pageList?page=${currentPage -
+                        1}&size=${size}">上一页</a>
+                </li>
+                <li class="page-item active "><a class="page-link" href="#">${index}</a>
+                </li>
+                <li>
+                    <a class="page-link" href="/pageList?page=${index}&size=${size}">
+                        ${index}</a>
+                </li>
+                <li class="disabled "><a class="page-link" href="#">下一页</a></li>
+                <li>
+                    <a class="page-link" href="/pageList?page=${currentPage + 1}&size=${size}">下一页</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
