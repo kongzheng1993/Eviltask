@@ -1,6 +1,7 @@
 package com.cmos.bj.ngtask.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.cmos.bj.ngtask.service.TaskService;
 import com.cmos.bj.ngtask.utils.TaskUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,11 +18,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TaskController {
 
     @Autowired
-    private TaskUtils taskUtils;
+    private TaskService taskService;
 
     @RequestMapping("/Task")
     public String getAllTask(Model model) {
-        model.addAttribute(taskUtils.getSchedulerTasks());
+        model.addAttribute("task", taskService.getAllTask());
         return "task";
     }
 

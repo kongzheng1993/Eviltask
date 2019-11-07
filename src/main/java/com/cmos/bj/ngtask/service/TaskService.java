@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+
+import java.util.List;
 
 @Service
 public class TaskService {
@@ -17,6 +20,8 @@ public class TaskService {
     @Autowired
     private TaskRepository taskRepository;
 
-    public
+    public List<Task> getAllTask() {
+        return taskRepository.findAll();
+    }
 
 }
