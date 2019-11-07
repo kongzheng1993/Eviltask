@@ -1,0 +1,110 @@
+08:51:01.842 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 1432 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+08:51:01.896 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+08:51:02.382 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+08:51:02.383 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+08:51:06.387 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+08:51:06.735 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 319ms. Found 3 repository interfaces.
+08:51:07.289 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+08:51:08.141 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3a66d9da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08:51:09.618 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+08:51:09.668 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+08:51:09.720 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+08:51:09.721 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+08:51:10.684 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+08:51:10.685 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 8298 ms
+08:51:10.715 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+08:51:10.918 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+08:51:10.937 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+08:51:12.044 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+08:51:12.219 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+08:51:12.432 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+08:51:12.436 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+08:51:12.955 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+08:51:13.508 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+08:51:15.984 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+08:51:17.759 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+08:51:17.776 INFO  com.cmos.bj.ngtask.config.TaskConfig [43] - 开始注册所有任务……
+08:51:18.003 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+08:51:18.751 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+08:51:18.751 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - 100任务添加成功
+08:51:18.754 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+08:51:18.759 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - 154任务添加成功
+08:51:18.848 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+08:51:18.849 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - deleteFileTest任务添加成功
+08:51:19.656 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+08:51:20.917 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+08:51:21.013 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+08:51:21.089 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+08:51:21.098 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 21.908 seconds (JVM running for 29.161)
+08:52:00.414 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+08:52:12.785 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+08:52:24.991 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [96] - Unexpected error occurred in scheduled task.
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 0
+*OrdMember_20191029*
+^
+	at java.util.regex.Pattern.error(Pattern.java:1955)
+	at java.util.regex.Pattern.sequence(Pattern.java:2123)
+	at java.util.regex.Pattern.expr(Pattern.java:1996)
+	at java.util.regex.Pattern.compile(Pattern.java:1696)
+	at java.util.regex.Pattern.<init>(Pattern.java:1351)
+	at java.util.regex.Pattern.compile(Pattern.java:1028)
+	at java.util.regex.Pattern.matches(Pattern.java:1133)
+	at java.lang.String.matches(String.java:2121)
+	at com.cmos.bj.ngtask.task.impl.file.DeleteLocalFileTaskImpl.execute(DeleteLocalFileTaskImpl.java:70)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+08:53:00.336 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+08:53:00.367 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+08:58:51.084 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+08:58:51.582 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+08:59:02.497 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [96] - Unexpected error occurred in scheduled task.
+java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 0
+*OrdMember_20191029*
+^
+	at java.util.regex.Pattern.error(Pattern.java:1955)
+	at java.util.regex.Pattern.sequence(Pattern.java:2123)
+	at java.util.regex.Pattern.expr(Pattern.java:1996)
+	at java.util.regex.Pattern.compile(Pattern.java:1696)
+	at java.util.regex.Pattern.<init>(Pattern.java:1351)
+	at java.util.regex.Pattern.compile(Pattern.java:1028)
+	at java.util.regex.Pattern.matches(Pattern.java:1133)
+	at java.lang.String.matches(String.java:2121)
+	at com.cmos.bj.ngtask.task.impl.file.DeleteLocalFileTaskImpl.execute(DeleteLocalFileTaskImpl.java:70)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+08:59:02.608 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+08:59:04.964 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+09:00:00.417 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+09:00:00.417 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+09:00:42.109 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [94] - 任务执行成功：deleteFileTest
+09:01:00.159 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+09:01:41.579 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+09:02:55.780 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [94] - 任务执行成功：deleteFileTest
+09:02:55.922 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+09:03:15.626 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+09:03:20.934 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+09:03:48.468 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [77] - 删除文件成功：F:\workspace\idea\ngtask\fuckOff\100_OrdMember_2019102917\100_OrdMember_2019102917\45145dfsOrdMember_201910296798
+09:03:58.823 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [94] - 任务执行成功：deleteFileTest
+09:04:00.228 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+09:04:00.804 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+09:04:03.490 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [94] - 任务执行成功：deleteFileTest

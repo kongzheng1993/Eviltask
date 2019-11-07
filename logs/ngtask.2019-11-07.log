@@ -1,0 +1,423 @@
+15:30:59.772 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 23448 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+15:30:59.778 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+15:30:59.915 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:30:59.915 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:31:01.573 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:31:01.750 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 161ms. Found 3 repository interfaces.
+15:31:01.991 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+15:31:02.397 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bce06dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:31:03.052 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+15:31:03.077 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+15:31:03.090 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+15:31:03.091 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+15:31:03.375 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+15:31:03.375 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3459 ms
+15:31:03.383 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+15:31:03.453 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+15:31:03.457 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+15:31:05.405 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+15:31:05.528 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:31:05.652 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+15:31:05.656 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+15:31:05.916 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+15:31:06.193 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:31:07.145 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:31:07.565 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+15:31:07.568 INFO  com.cmos.bj.ngtask.config.TaskConfig [47] - 开始注册所有任务……
+15:31:07.640 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+15:31:07.997 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+15:31:07.997 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 100任务添加成功
+15:31:07.998 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+15:31:07.999 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 154任务添加成功
+15:31:08.019 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+15:31:08.019 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - deleteFileTest任务添加成功
+15:31:08.403 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:31:08.448 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+15:31:08.509 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+15:31:08.887 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+15:31:09.234 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+15:31:09.271 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+15:31:09.276 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 10.67 seconds (JVM running for 14.336)
+15:31:47.189 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:31:47.190 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+15:31:47.201 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 11 ms
+15:32:00.175 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:32:00.178 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:32:00.192 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:33:00.057 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:33:00.084 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:33:00.093 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:34:00.018 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:34:00.035 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:34:00.087 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:34:29.710 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 6052 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+15:34:29.718 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+15:34:29.891 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:34:29.891 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:34:32.033 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:34:32.212 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 166ms. Found 3 repository interfaces.
+15:34:32.458 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+15:34:32.875 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e1c0b696] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:34:33.584 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+15:34:33.607 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+15:34:33.620 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+15:34:33.622 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+15:34:33.938 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+15:34:33.940 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4049 ms
+15:34:33.952 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+15:34:34.012 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+15:34:34.017 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+15:34:34.643 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+15:34:34.734 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:34:34.818 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+15:34:34.821 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+15:34:35.007 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+15:34:35.234 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:34:36.083 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:34:36.396 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+15:34:36.399 INFO  com.cmos.bj.ngtask.config.TaskConfig [47] - 开始注册所有任务……
+15:34:36.464 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+15:34:36.749 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+15:34:36.749 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 100任务添加成功
+15:34:36.750 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+15:34:36.751 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 154任务添加成功
+15:34:36.771 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+15:34:36.771 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - deleteFileTest任务添加成功
+15:34:37.146 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:34:37.187 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+15:34:37.244 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+15:34:37.602 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+15:34:37.892 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+15:34:37.927 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+15:34:37.930 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 9.534 seconds (JVM running for 12.86)
+15:35:00.090 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:35:00.092 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:35:00.098 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:35:09.066 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:35:09.067 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+15:35:09.082 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 14 ms
+15:36:00.017 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:36:00.056 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:36:00.061 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:37:00.096 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:37:00.117 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:37:00.122 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:38:00.038 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:38:00.070 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:38:00.123 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:39:00.057 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:39:00.070 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:39:00.079 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:39:42.680 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 10680 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+15:39:42.689 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+15:39:42.806 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15:39:42.807 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+15:39:45.054 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+15:39:45.454 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 378ms. Found 3 repository interfaces.
+15:39:46.206 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+15:39:46.863 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f1e5451] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+15:39:47.760 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+15:39:47.786 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+15:39:47.801 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+15:39:47.802 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+15:39:48.098 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+15:39:48.098 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 5291 ms
+15:39:48.105 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+15:39:48.158 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+15:39:48.162 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+15:39:48.771 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+15:39:48.862 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+15:39:48.950 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+15:39:48.953 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+15:39:49.139 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+15:39:49.373 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+15:39:50.173 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:39:50.490 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+15:39:50.492 INFO  com.cmos.bj.ngtask.config.TaskConfig [47] - 开始注册所有任务……
+15:39:50.568 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+15:39:50.942 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+15:39:50.943 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 100任务添加成功
+15:39:50.944 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+15:39:50.944 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 154任务添加成功
+15:39:50.972 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+15:39:50.973 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - deleteFileTest任务添加成功
+15:39:51.328 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:39:51.371 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+15:39:51.431 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+15:39:51.771 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+15:39:52.082 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+15:39:52.120 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+15:39:52.124 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 10.506 seconds (JVM running for 13.827)
+15:40:00.092 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:40:00.101 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:40:00.116 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:40:09.959 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:40:09.960 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+15:40:09.975 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 15 ms
+15:41:00.027 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:41:00.032 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:41:00.036 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:42:00.025 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:42:00.029 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:42:00.034 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:43:00.013 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:43:00.024 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:43:00.034 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:44:00.023 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:44:00.028 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:44:00.032 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:45:00.037 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:45:00.043 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:45:00.047 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:42:04.253 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 10408 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+16:42:04.300 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+16:42:04.550 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:42:04.550 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:42:07.277 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+16:42:07.555 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 258ms. Found 3 repository interfaces.
+16:42:08.005 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+16:42:09.023 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f69e4148] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:42:10.007 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+16:42:10.037 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+16:42:10.059 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+16:42:10.059 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+16:42:10.446 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+16:42:10.447 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 5896 ms
+16:42:10.457 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+16:42:10.540 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+16:42:10.547 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+16:42:11.349 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+16:42:11.456 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:42:11.582 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+16:42:11.585 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+16:42:11.846 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+16:42:12.132 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:42:13.101 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:42:13.471 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+16:42:13.474 INFO  com.cmos.bj.ngtask.config.TaskConfig [47] - 开始注册所有任务……
+16:42:13.578 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+16:42:13.973 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+16:42:13.973 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 100任务添加成功
+16:42:13.974 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+16:42:13.975 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 154任务添加成功
+16:42:13.996 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+16:42:13.996 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - deleteFileTest任务添加成功
+16:42:14.375 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:42:14.424 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+16:42:14.488 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+16:42:14.904 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+16:42:14.958 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+16:42:15.230 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+16:42:15.249 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 12.859 seconds (JVM running for 16.862)
+16:42:16.715 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:42:16.715 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+16:42:16.728 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 13 ms
+16:43:00.100 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:43:00.100 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:43:00.100 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:44:00.013 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:44:00.013 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:44:00.013 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:45:00.020 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:45:00.022 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:45:00.031 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:46:00.011 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:46:00.013 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:46:00.067 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:47:00.011 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:47:00.011 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:47:00.016 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:48:00.011 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:48:00.012 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:48:00.020 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:49:00.018 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:49:00.018 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:49:00.023 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:50:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:50:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:50:00.013 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:51:00.011 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:51:00.013 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:51:00.031 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:52:00.012 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:52:00.012 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:52:00.018 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:53:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:53:00.010 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:53:00.018 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:54:00.009 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:54:00.009 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:54:00.020 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:55:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:55:00.010 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:55:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:56:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:56:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:56:00.010 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:56:38.538 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 33656 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+16:56:38.546 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+16:56:38.669 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:56:38.669 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:56:41.549 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+16:56:41.791 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 227ms. Found 3 repository interfaces.
+16:56:42.113 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+16:56:42.601 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7ee2a690] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:56:43.269 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+16:56:43.293 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+16:56:43.308 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+16:56:43.308 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+16:56:43.604 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+16:56:43.605 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4865 ms
+16:56:43.628 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+16:56:43.713 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+16:56:43.720 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+16:56:44.451 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+16:56:44.545 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:56:44.656 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+16:56:44.660 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+16:56:44.904 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+16:56:45.184 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:56:46.074 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:56:46.401 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+16:56:46.404 INFO  com.cmos.bj.ngtask.config.TaskConfig [47] - 开始注册所有任务……
+16:56:46.483 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+16:56:46.783 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+16:56:46.784 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 100任务添加成功
+16:56:46.785 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+16:56:46.785 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 154任务添加成功
+16:56:46.805 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+16:56:46.806 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - deleteFileTest任务添加成功
+16:56:47.176 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:56:47.218 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+16:56:47.307 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+16:56:47.659 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+16:56:47.949 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+16:56:47.987 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+16:56:47.991 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 10.718 seconds (JVM running for 14.428)
+16:56:49.419 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:56:49.420 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+16:56:49.432 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 12 ms
+16:57:00.108 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:57:00.108 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:57:00.113 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:58:00.049 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+16:58:00.057 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+16:58:00.061 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+16:59:04.551 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 29160 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+16:59:04.557 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+16:59:04.652 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:59:04.653 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:59:06.704 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+16:59:06.900 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 183ms. Found 3 repository interfaces.
+16:59:07.152 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+16:59:07.566 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$31787daf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:59:08.449 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+16:59:08.471 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+16:59:08.486 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+16:59:08.487 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+16:59:08.764 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+16:59:08.765 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4111 ms
+16:59:08.774 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+16:59:08.881 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+16:59:08.895 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+16:59:09.749 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+16:59:09.888 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+16:59:10.008 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+16:59:10.011 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+16:59:10.259 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+16:59:10.585 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:59:12.101 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:59:12.994 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+16:59:12.999 INFO  com.cmos.bj.ngtask.config.TaskConfig [47] - 开始注册所有任务……
+16:59:13.122 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+16:59:13.558 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+16:59:13.559 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 100任务添加成功
+16:59:13.560 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+16:59:13.561 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 154任务添加成功
+16:59:13.604 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+16:59:13.605 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - deleteFileTest任务添加成功
+16:59:14.166 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:59:14.226 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+16:59:14.297 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+16:59:14.653 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+16:59:14.982 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+16:59:15.019 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+16:59:15.022 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 11.673 seconds (JVM running for 14.568)
+16:59:16.244 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:59:16.245 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+16:59:16.257 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 12 ms
+17:00:00.099 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+17:00:00.099 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+17:00:00.100 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+17:01:00.015 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+17:01:00.015 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+17:01:00.027 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+17:02:00.016 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+17:02:00.020 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+17:02:00.026 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+17:03:00.013 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+17:03:00.020 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+17:03:00.043 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+17:48:30.843 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 29172 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+17:48:30.902 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+17:48:31.035 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:48:31.036 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:48:33.519 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+17:48:33.698 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 162ms. Found 3 repository interfaces.
+17:48:33.954 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+17:48:34.336 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5cbc4282] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:48:35.026 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+17:48:35.052 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+17:48:35.066 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+17:48:35.067 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+17:48:35.330 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+17:48:35.331 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4295 ms
+17:48:35.339 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+17:48:35.399 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+17:48:35.406 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+17:48:36.192 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+17:48:36.336 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:48:36.465 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+17:48:36.469 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+17:48:36.746 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+17:48:37.081 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:48:38.071 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:48:38.746 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+17:48:38.749 INFO  com.cmos.bj.ngtask.config.TaskConfig [47] - 开始注册所有任务……
+17:48:38.838 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+17:48:39.361 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+17:48:39.362 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 100任务添加成功
+17:48:39.363 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+17:48:39.366 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - 154任务添加成功
+17:48:39.401 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+17:48:39.402 INFO  com.cmos.bj.ngtask.config.TaskConfig [82] - deleteFileTest任务添加成功
+17:48:39.906 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:48:39.986 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+17:48:40.079 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+17:48:40.729 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+17:48:41.420 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+17:48:41.494 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+17:48:41.499 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 12.884 seconds (JVM running for 16.681)
+17:48:53.827 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:48:53.827 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+17:48:53.839 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 12 ms
+17:49:00.093 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+17:49:00.093 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+17:49:00.093 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+17:50:00.020 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+17:50:00.053 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+17:50:00.059 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。

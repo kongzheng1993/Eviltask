@@ -1,0 +1,240 @@
+11:02:53.181 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 13192 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+11:02:53.189 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+11:02:53.296 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:02:53.296 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:02:55.291 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+11:02:55.484 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 176ms. Found 3 repository interfaces.
+11:02:55.761 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+11:02:56.312 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$eb205461] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:02:56.982 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+11:02:57.010 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+11:02:57.024 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+11:02:57.025 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+11:02:57.314 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+11:02:57.314 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4017 ms
+11:02:57.328 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+11:02:57.390 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+11:02:57.396 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+11:02:58.473 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+11:02:58.579 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+11:02:58.712 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+11:02:58.716 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+11:02:59.000 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+11:02:59.319 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+11:03:00.514 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:03:01.073 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+11:03:01.076 INFO  com.cmos.bj.ngtask.config.TaskConfig [43] - 开始注册所有任务……
+11:03:01.177 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+11:03:01.701 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+11:03:01.702 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - 100任务添加成功
+11:03:01.703 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+11:03:01.703 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - 154任务添加成功
+11:03:01.734 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+11:03:01.734 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - deleteFileTest任务添加成功
+11:03:02.159 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:03:02.291 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+11:03:02.989 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+11:03:03.047 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+11:03:03.087 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+11:03:03.092 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 11.01 seconds (JVM running for 16.843)
+11:04:02.298 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+11:04:02.310 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+11:04:17.218 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [96] - Unexpected error occurred in scheduled task.
+java.lang.IllegalArgumentException: Parameter 'directory' is not a directory: F:\workspace\idea\ngtask\fuckOff
+	at org.apache.commons.io.FileUtils.validateListFilesParameters(FileUtils.java:536)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:512)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:684)
+	at com.cmos.bj.ngtask.task.impl.file.DeleteLocalFileTaskImpl.execute(DeleteLocalFileTaskImpl.java:64)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+11:04:28.357 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:04:28.357 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+11:04:28.373 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 15 ms
+11:04:33.208 ERROR org.thymeleaf.TemplateEngine [1136] - [THYMELEAF][http-nio-8001-exec-3] Exception processing template "test": Error resolving template [test], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [test], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+11:04:33.215 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [test], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [test], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1371)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1117)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1056)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+11:08:50.790 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 6936 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+11:08:50.798 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+11:08:51.002 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:08:51.003 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:08:52.910 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+11:08:53.094 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 170ms. Found 3 repository interfaces.
+11:08:53.395 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+11:08:53.859 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8f8f2e18] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:08:54.476 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+11:08:54.503 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+11:08:54.517 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+11:08:54.517 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+11:08:54.817 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+11:08:54.818 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3815 ms
+11:08:54.826 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+11:08:54.883 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+11:08:54.890 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+11:08:55.533 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+11:08:55.629 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+11:08:55.742 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+11:08:55.747 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+11:08:55.989 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+11:08:56.311 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+11:08:57.282 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:08:57.681 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+11:08:57.684 INFO  com.cmos.bj.ngtask.config.TaskConfig [43] - 开始注册所有任务……
+11:08:57.775 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+11:08:58.153 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+11:08:58.153 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - 100任务添加成功
+11:08:58.155 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+11:08:58.155 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - 154任务添加成功
+11:08:58.184 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+11:08:58.184 INFO  com.cmos.bj.ngtask.config.TaskConfig [78] - deleteFileTest任务添加成功
+11:08:58.569 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:08:58.708 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+11:08:59.434 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+11:08:59.493 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+11:08:59.533 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+11:08:59.538 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 10.203 seconds (JVM running for 13.663)
+11:09:01.185 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+11:09:01.191 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+11:09:05.029 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler [96] - Unexpected error occurred in scheduled task.
+java.lang.IllegalArgumentException: Parameter 'directory' is not a directory: F:\workspace\idea\ngtask\fuckOff
+	at org.apache.commons.io.FileUtils.validateListFilesParameters(FileUtils.java:536)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:512)
+	at org.apache.commons.io.FileUtils.listFiles(FileUtils.java:684)
+	at com.cmos.bj.ngtask.task.impl.file.DeleteLocalFileTaskImpl.execute(DeleteLocalFileTaskImpl.java:64)
+	at com.cmos.bj.ngtask.task.ScheduleOfTask.run(ScheduleOfTask.java:23)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+11:09:13.327 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:09:13.328 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+11:09:13.340 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 12 ms

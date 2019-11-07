@@ -596,11 +596,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.TaskApplication" />
       <item itemvalue="JUnit.FtpUtilsTest.Test" />
       <item itemvalue="JUnit.TaskApplicationTests.contextLoads" />
       <item itemvalue="JUnit.TaskApplicationTests.test" />
       <item itemvalue="JUnit.ScheduledConfigTest.test" />
-      <item itemvalue="Spring Boot.TaskApplication" />
     </list>
     <recent_temporary>
       <list>

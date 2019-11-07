@@ -1,0 +1,102 @@
+14:27:14.209 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 7540 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+14:27:14.220 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+14:27:14.342 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:27:14.342 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:27:16.431 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:27:16.606 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 159ms. Found 2 repository interfaces.
+14:27:16.853 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+14:27:17.334 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$463a93ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:27:18.009 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+14:27:18.034 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+14:27:18.050 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+14:27:18.051 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+14:27:18.356 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+14:27:18.356 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4012 ms
+14:27:18.364 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+14:27:18.432 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+14:27:18.439 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+14:27:19.069 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+14:27:19.175 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+14:27:19.287 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+14:27:19.291 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+14:27:19.554 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+14:27:19.884 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:27:21.010 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:27:21.424 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+14:27:21.426 INFO  com.cmos.bj.ngtask.config.TaskConfig [44] - 开始注册所有任务……
+14:27:21.513 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+14:27:21.858 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+14:27:21.858 INFO  com.cmos.bj.ngtask.config.TaskConfig [76] - 100任务添加成功
+14:27:21.860 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+14:27:21.861 INFO  com.cmos.bj.ngtask.config.TaskConfig [76] - 154任务添加成功
+14:27:22.282 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:27:23.065 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+14:27:23.133 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+14:27:23.177 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+14:27:23.183 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 10.674 seconds (JVM running for 14.131)
+14:28:01.197 INFO  com.cmos.bj.ngtask.utils.SftpUtils [54] - sftp session 连接成功
+14:28:01.198 INFO  com.cmos.bj.ngtask.utils.SftpUtils [54] - sftp session 连接成功
+14:28:01.228 INFO  com.cmos.bj.ngtask.utils.SftpUtils [71] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+14:28:01.228 INFO  com.cmos.bj.ngtask.utils.SftpUtils [71] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+14:28:01.277 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  1545734965480^固话非实名停机测试.txt
+14:28:01.278 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [85] - 任务执行完毕：154
+14:28:01.415 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_2019222
+14:28:01.430 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_201922
+14:28:01.445 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_2019111
+14:28:01.460 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_201911
+14:28:01.461 INFO  com.cmos.bj.ngtask.utils.SftpUtils [54] - sftp session 连接成功
+14:28:01.461 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [85] - 任务执行完毕：100
+14:28:01.481 INFO  com.cmos.bj.ngtask.utils.SftpUtils [71] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+14:29:49.172 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 3124 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+14:29:49.180 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+14:29:49.377 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:29:49.378 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:29:51.340 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:29:51.541 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 187ms. Found 2 repository interfaces.
+14:29:51.784 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+14:29:52.246 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5460ef5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:29:52.903 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+14:29:52.932 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+14:29:52.946 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+14:29:52.947 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+14:29:53.250 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+14:29:53.251 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 3873 ms
+14:29:53.261 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+14:29:53.324 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+14:29:53.330 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+14:29:53.951 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+14:29:54.051 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+14:29:54.163 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+14:29:54.168 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+14:29:54.422 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+14:29:54.721 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:29:55.749 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:29:56.167 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+14:29:56.170 INFO  com.cmos.bj.ngtask.config.TaskConfig [44] - 开始注册所有任务……
+14:29:56.254 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+14:29:56.626 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+14:29:56.627 INFO  com.cmos.bj.ngtask.config.TaskConfig [76] - 100任务添加成功
+14:29:56.628 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+14:29:56.629 INFO  com.cmos.bj.ngtask.config.TaskConfig [76] - 154任务添加成功
+14:29:57.019 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:29:57.775 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+14:29:57.832 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+14:29:57.875 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+14:29:57.879 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 10.288 seconds (JVM running for 13.557)
+14:30:01.258 INFO  com.cmos.bj.ngtask.utils.SftpUtils [54] - sftp session 连接成功
+14:30:01.277 INFO  com.cmos.bj.ngtask.utils.SftpUtils [54] - sftp session 连接成功
+14:30:01.294 INFO  com.cmos.bj.ngtask.utils.SftpUtils [71] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+14:30:01.298 INFO  com.cmos.bj.ngtask.utils.SftpUtils [71] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
+14:30:01.344 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  1545734965480^固话非实名停机测试.txt
+14:30:01.345 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [85] - 任务执行完毕：154
+14:30:01.504 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_2019222
+14:30:01.524 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_201922
+14:30:01.540 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_2019111
+14:30:01.561 INFO  com.cmos.bj.ngtask.utils.SftpUtils [157] - 文件下载成功-----  100_OrdMember_201911
+14:30:01.561 INFO  c.c.b.n.task.impl.sftp.SftpTaskImpl [85] - 任务执行完毕：100
+14:30:01.582 INFO  com.cmos.bj.ngtask.utils.SftpUtils [54] - sftp session 连接成功
+14:30:01.602 INFO  com.cmos.bj.ngtask.utils.SftpUtils [71] - Connected successfully to ftpHost = 10.7.5.69 on port 22 as sftpUserName ftpuser
