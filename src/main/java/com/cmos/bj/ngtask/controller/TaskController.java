@@ -1,9 +1,8 @@
 package com.cmos.bj.ngtask.controller;
 
-import com.alibaba.fastjson.JSONObject;
-import com.cmos.bj.ngtask.service.TaskService;
-import com.cmos.bj.ngtask.utils.TaskUtils;
+import com.cmos.bj.ngtask.repository.TaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +17,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TaskController {
 
     @Autowired
-    private TaskService taskService;
+    private TaskRepository taskRepository;
 
-    @RequestMapping("/Task")
-    public String getAllTask(Model model) {
-        model.addAttribute("task", taskService.getAllTask());
+    @RequestMapping("/task")
+    public String getAllTask(Model model, Pageable pageable) {
+        model.addAttribute("task", taskRepository.findAll(pageable));
         return "task";
     }
 

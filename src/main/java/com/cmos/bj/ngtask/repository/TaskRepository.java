@@ -1,6 +1,8 @@
 package com.cmos.bj.ngtask.repository;
 
 import com.cmos.bj.ngtask.entity.Task;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -11,5 +13,13 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 
 public interface TaskRepository extends JpaRepository<Task, Integer> {
+
+    /**
+     * 获取所有task
+     * @param pageable
+     * @return
+     */
+    @Override
+    Page<Task> findAll(Pageable pageable);
 
 }

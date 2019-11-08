@@ -168,7 +168,7 @@ public class SftpUtils {
             }
             return true;
         } else {
-            logger.info("指定目录下没有指定文件..");
+            logger.info("指定目录下没有指定文件 " + remotePath);
             return false;
         }
 

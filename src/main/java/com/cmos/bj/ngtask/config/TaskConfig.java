@@ -21,6 +21,7 @@ import javax.annotation.PostConstruct;
 
 /**
  * task配置类
+ * @author kongz
  */
 
 @Component
