@@ -17,11 +17,6 @@ public class TaskService {
 
     private final static Logger logger = LoggerFactory.getLogger(TaskService.class);
 
-    @Autowired
-    private TaskRepository taskRepository;
 
-    public List<Task> getAllTask() {
-        return taskRepository.findAll();
-    }
 
 }
