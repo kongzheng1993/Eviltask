@@ -45,3 +45,5 @@ INSERT INTO `task` VALUES (1,'100','com.cmos.bj.ngtask.task.impl.sftp.SftpDownlo
 
 INSERT INTO `user` VALUES (1,'test','test');
 
+insert into `admin` values (1, 'kongzheng', 'kongzheng', '15810692477', '孔征');
+insert into `admin` values (2, 'kongzheng1', 'kongzheng1', '15810692477', '孔征1');
