@@ -154,7 +154,7 @@ CREATE TABLE `user` (
 
 
 
-
+DROP TABLE IF EXISTS `admin`;
 CREATE TABLE `admin` (
   `admin_id` int(11) NOT NULL AUTO_INCREMENT,
   `admin_name` varchar(20) not null,

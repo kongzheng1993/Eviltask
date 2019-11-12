@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div th:fragment="commonNav">
+<div th:fragment="commonNav(admins)">
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -52,7 +52,7 @@
                     <button type="submit" class="btn btn-default">Submit</button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" data-toggle="modal" data-target="#connect-admin" onclick="getAllAdmins">联系管理员</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#connect-admin" id="connectAdmin" onclick="getAdmins();">联系管理员</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">其他 <span class="caret"></span></a>
@@ -108,10 +108,6 @@
 </div>
 
 <script>
-
-    function getAllAdmins() {
-        $("#connect-admin").modal()
-    }
 
 </script>
 
