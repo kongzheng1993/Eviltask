@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +14,10 @@
 
 </head>
 <body>
+<div th:include="common/common::commonNav"></div>
 
-    <table class="table">
-        <caption>Tasks</caption>
+    <table class="table table-bordered">
+        <caption><strong>Tasks</strong></caption>
         <thead>
         <tr>
             <th>
@@ -52,8 +53,17 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-
+        <tr th:each="task:${tasks}">
+            <td th:text="${task.taskId}"></td>
+            <td th:text="${task.taskName}"></td>
+            <td th:text="${task.taskClassName}"></td>
+            <td th:text="${task.taskExpression}"></td>
+            <td th:text="${task.taskDesc}"></td>
+            <td th:text="${task.taskStatus}"></td>
+            <td th:text="${task.afterTask}"></td>
+            <td th:text="${task.ftpId}"></td>
+            <td th:text="${task.sftpId}"></td>
+            <td th:text="${task.fileId}"></td>
         </tr>
         </tbody>
     </table>
