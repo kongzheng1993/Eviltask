@@ -1,0 +1,96 @@
+14:43:10.244 INFO  com.cmos.bj.ngtask.TaskApplication [50] - Starting TaskApplication on Evil with PID 2520 (F:\workspace\idea\ngtask\target\classes started by kongz in F:\workspace\idea\ngtask)
+14:43:10.252 INFO  com.cmos.bj.ngtask.TaskApplication [652] - The following profiles are active: dev
+14:43:10.424 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+14:43:10.425 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [225] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+14:43:12.687 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+14:43:12.937 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [182] - Finished Spring Data repository scanning in 231ms. Found 5 repository interfaces.
+14:43:13.269 WARN  o.m.s.mapper.ClassPathMapperScanner [44] - No MyBatis mapper was found in '[com.cmos.bj.ngtask]' package. Please check your configuration.
+14:43:13.828 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4996220c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:43:14.738 INFO  o.s.b.w.e.tomcat.TomcatWebServer [90] - Tomcat initialized with port(s): 8001 (http)
+14:43:14.837 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Initializing ProtocolHandler ["http-nio-8001"]
+14:43:14.859 INFO  o.a.catalina.core.StandardService [173] - Starting service [Tomcat]
+14:43:14.859 INFO  o.a.catalina.core.StandardEngine [173] - Starting Servlet engine: [Apache Tomcat/9.0.24]
+14:43:15.275 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring embedded WebApplicationContext
+14:43:15.275 INFO  o.s.web.context.ContextLoader [284] - Root WebApplicationContext: initialization completed in 4848 ms
+14:43:15.286 INFO  c.cmos.bj.ngtask.config.DruidConfig [28] - init Druid Servlet Configuration
+14:43:15.387 INFO  o.s.b.web.servlet.RegistrationBean [110] - Servlet statViewServlet was not registered (possibly already registered?)
+14:43:15.395 INFO  o.s.b.web.servlet.RegistrationBean [110] - Filter webStatFilter was not registered (possibly already registered?)
+14:43:21.165 INFO  c.alibaba.druid.pool.DruidDataSource [930] - {dataSource-1} inited
+14:43:24.020 INFO  o.s.b.d.a.OptionalLiveReloadServer [57] - LiveReload server is running on port 35729
+14:43:24.416 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+14:43:24.576 INFO  org.hibernate.Version [46] - HHH000412: Hibernate Core {5.3.11.Final}
+14:43:24.580 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+14:43:25.146 INFO  o.h.annotations.common.Version [49] - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+14:43:25.561 INFO  org.hibernate.dialect.Dialect [157] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+14:43:27.159 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [415] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:43:27.722 INFO  o.s.s.c.ThreadPoolTaskScheduler [171] - Initializing ExecutorService 'threadPoolTaskScheduler'
+14:43:27.726 INFO  com.cmos.bj.ngtask.config.TaskConfig [48] - 开始注册所有任务……
+14:43:27.827 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory
+14:43:28.217 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：100
+14:43:28.218 INFO  com.cmos.bj.ngtask.config.TaskConfig [83] - 100任务添加成功
+14:43:28.219 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：154
+14:43:28.219 INFO  com.cmos.bj.ngtask.config.TaskConfig [83] - 154任务添加成功
+14:43:28.250 INFO  com.cmos.bj.ngtask.utils.TaskUtils [56] - 添加任务成功：deleteFileTest
+14:43:28.252 INFO  com.cmos.bj.ngtask.config.TaskConfig [83] - deleteFileTest任务添加成功
+14:43:29.224 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [226] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:43:29.296 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping [58] - Adding welcome page template: index
+14:43:29.695 WARN  o.t.templatemode.TemplateMode [150] - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+14:43:30.891 INFO  o.a.coyote.http11.Http11NioProtocol [173] - Starting ProtocolHandler ["http-nio-8001"]
+14:43:31.030 INFO  o.s.b.w.e.tomcat.TomcatWebServer [202] - Tomcat started on port(s): 8001 (http) with context path ''
+14:43:31.040 INFO  com.cmos.bj.ngtask.TaskApplication [59] - Started TaskApplication in 22.127 seconds (JVM running for 47.516)
+14:43:43.334 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:43:43.334 INFO  o.s.web.servlet.DispatcherServlet [524] - Initializing Servlet 'dispatcherServlet'
+14:43:43.370 INFO  o.s.web.servlet.DispatcherServlet [546] - Completed initialization in 36 ms
+14:44:00.041 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:44:00.069 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:44:00.071 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:45:00.045 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:45:00.052 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:45:00.104 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:46:00.012 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:46:00.012 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:46:00.012 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:47:00.015 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:47:00.030 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:47:00.044 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:48:00.012 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:48:00.016 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:48:00.016 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:49:00.009 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:49:00.011 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:49:00.095 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:50:00.014 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:50:00.024 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:50:00.041 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:51:00.017 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:51:00.021 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:51:00.025 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:52:00.020 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:52:00.022 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:52:00.061 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:53:00.012 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:53:00.020 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:53:00.020 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:54:00.009 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:54:00.009 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:54:00.009 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:55:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:55:00.011 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:55:00.013 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:56:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:56:00.010 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:56:00.018 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:57:00.009 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:57:00.009 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:57:00.009 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:58:00.008 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:58:00.009 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+14:58:00.018 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:59:00.011 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+14:59:00.011 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+14:59:00.011 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
+15:00:00.008 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 154任务已停用，如要启用请修改配置。
+15:00:00.008 INFO  c.c.b.n.t.i.f.DeleteLocalFileTaskImpl [53] - deleteFileTest任务已停用，如要启用请修改配置。
+15:00:00.008 INFO  com.cmos.bj.ngtask.task.AbsSftpTask [38] - 100任务已停用，如要启用请修改配置。
